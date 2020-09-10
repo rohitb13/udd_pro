@@ -1,0 +1,989 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Component/s,Component/s,Due Date,Votes,Labels,Description,Environment,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Outward issue link (Blocks),Outward issue link (Dependent),Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Custom field (Actual End Date),Custom field (Actual Start Date),Custom field (Epic Link),Custom field (Planned End Date),Custom field (Planned Start Date),Custom field (Rank),Custom field (Story Points),Custom field (Target Build Id),Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment
+Interfaces are listed in Outgoing Dependent Conflict after editing delivered child element,UBT-1276,15198,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vishwadip.more,neeraj.badade,neeraj.badade,19/Dec/19 2:34 PM,19/Dec/19 2:34 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create Enum and complete.
+ # Create DE/CS using completed Enum.
+ # Complete DE/CS.
+ # Compare workspace with stream and deliver Enum.(Verify DE/CS is listed in Outgoing changes)
+ # Edit delivered Enum and save.
+ # Compare workspace with stream and verify DE/CS.(DE/CS is listed in Outgoing Dependent conflict)
+
+*Note:* This issue occurs for MSI-MD as well.
+
+ ","Version: 1.9.20191201
+Build Id: 12/19/2019 08.30",neeraj.badade,,,,,,,,,,,,,,,,19/Dec/19 2:33 PM;neeraj.badade;SS1.png;http://kpitjira.kpit.com/secure/attachment/13287/SS1.png,,,,,,,,,,,,0|zs0nh4:,,,,,,,,,,,,,
+UDD shall display complete short name of elements in left side pane,UBT-1275,15197,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,omkarb2,siddharth.patel,siddharth.patel,19/Dec/19 1:15 PM,19/Dec/19 5:50 PM,20/Dec/19 5:58 PM,,,,,0,,,,gitlab,siddharth.patel,,,,,,,,,,,,,,,19/Dec/19 1:15 PM;siddharth.patel;screenshot-1.png;http://kpitjira.kpit.com/secure/attachment/13286/screenshot-1.png,,,,,,,,,,,,0|zs0ngw:,,,"19/Dec/19 5:50 PM;gitlab;[Omkar Badave|https://gitlab.kpit.com/omkarb2] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/bebb554c521acf0caa923abc8d9a79605c5061dd]:
+'[UBT-1275] : Added tooltip for Unresolved Changes Tree Listing.'",,,,,,,,,,
+Unable to edit SwC from Check-in changes.,UBT-1274,15196,Bug,In Review,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vibhavari.gundecha,swapnali.jadhav,swapnali.jadhav,19/Dec/19 10:48 AM,20/Dec/19 12:51 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create SwC.
+ # Create Port/Event/Private data.
+ # Check-in SwC.
+ # Try to edit SwC from check-in changes.
+ # Observe error in logger.
+
+ 
+
+at t.e.checkedInResourceListingMenu (https://udd.kpit.com/UDD/scripts/scripts.cfa08728.js:1:2624975)","Version: 1.9.20191201
+Build Id: 12/19/2019 08.30",swapnali.jadhav,,,,,,,,,,,,,,,,20/Dec/19 12:51 PM;vibhavari.gundecha;Code_review_checklist_UBT-1274.xlsx;http://kpitjira.kpit.com/secure/attachment/13293/Code_review_checklist_UBT-1274.xlsx,20/Dec/19 12:51 PM;vibhavari.gundecha;Impact Analysis Document - UBT-1274.docx;http://kpitjira.kpit.com/secure/attachment/13292/Impact+Analysis+Document+-+UBT-1274.docx,19/Dec/19 10:47 AM;swapnali.jadhav;Screenshot (57).png;http://kpitjira.kpit.com/secure/attachment/13285/Screenshot+%2857%29.png,,,,,,,,,,0|zs0ngo:,,,,,,,,,,,,,
+[Multi-App]: Accepting higher/lower version of SWC does not trigger Enum merge.,UBT-1273,15195,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,18/Dec/19 5:37 PM,18/Dec/19 5:37 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a SWC.
+ # Create a IRV by consuming Enum.
+ # Deliver it.
+ # Now edit enum and Deliver.
+ # Edit Swc and consume the Enum and Deliver.
+ # Create an Application Ws.
+ # Accept the 1st version of SWC.
+ # Now accept tjhe 2nd version of SWc.
+ # Observe that Merge is not triggered for Enum. ","Version: 1.9.20191201
+Build Id: 12/17/2019 10.30",mrunal.kulkarni,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0ngg:,,,,,,,,,,,,,
+Dependency conflict is shown even if parent element is in Delivered state,UBT-1272,15193,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,sayali.nemade,swapnali.jadhav,swapnali.jadhav,18/Dec/19 5:20 PM,18/Dec/19 6:00 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create CS/Enum/DE.
+ # Complete and Consume in SwC.
+ # Complete and deliver SwC.
+ # Edit CS/Enum/DE.
+ # Observe dependency conflict is shown even SwC is in Delivered state","Version: 1.9.20191201
+Build Id: 12/17/2019 10.30",neeraj.badade,swapnali.jadhav,,,,,,,,,,,,,,,18/Dec/19 3:08 PM;swapnali.jadhav;Screenshot (56).png;http://kpitjira.kpit.com/secure/attachment/13284/Screenshot+%2856%29.png,,,,,,,,,,,,0|zs0ng0:,,,18/Dec/19 6:00 PM;neeraj.badade;Issue occurs in all elements,,,,,,,,,,
+User is able to edit Multi-Application even after publishing,UBT-1269,15190,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,18/Dec/19 3:29 PM,18/Dec/19 3:29 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a Application WS,
+ # Publish the Application WS.
+ # Now go to Application WS and Edit.
+ # Observe that user is able to edit.","Version: 1.9.20191201
+Build Id: 12/17/2019 10.30",mrunal.kulkarni,,,,,,,,,,,,,,,,18/Dec/19 3:29 PM;mrunal.kulkarni;Screenshot (389).png;http://kpitjira.kpit.com/secure/attachment/13281/Screenshot+%28389%29.png,18/Dec/19 3:29 PM;mrunal.kulkarni;Screenshot (390).png;http://kpitjira.kpit.com/secure/attachment/13280/Screenshot+%28390%29.png,18/Dec/19 3:29 PM;mrunal.kulkarni;Screenshot (391).png;http://kpitjira.kpit.com/secure/attachment/13279/Screenshot+%28391%29.png,,,,,,,,,,0|zs0nfc:,,,,,,,,,,,,,
+Cannot publish Integration when stream consists Application data.,UBT-1268,15189,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,sayali.nemade,mrunal.kulkarni,mrunal.kulkarni,18/Dec/19 3:20 PM,18/Dec/19 3:20 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create Application.
+ # Accept some data and publish the application.
+ # Create a Stream and then a workspace.
+ # Now create some elements and deliver it to the Stream.
+ # Now create a Local Integration WS.
+ # Select the created stream and now publish the integration.
+ # Observe that Export Fails.
+
+Error:
+
+File ""D:\udd_arch_tool\venv\lib\site-packages\flask\app.py"", line 2292, in wsgi_app
+ response = self.full_dispatch_request()
+ File ""D:\udd_arch_tool\venv\lib\site-packages\flask\app.py"", line 1815, in full_dispatch_request
+ rv = self.handle_user_exception(e)
+ File ""D:\udd_arch_tool\venv\lib\site-packages\flask_cors\extension.py"", line 161, in wrapped_function
+ return cors_after_request(app.make_response(f(*args, **kwargs)))
+ File ""D:\udd_arch_tool\venv\lib\site-packages\flask\app.py"", line 1718, in handle_user_exception
+ reraise(exc_type, exc_value, tb)
+ File ""D:\udd_arch_tool\venv\lib\site-packages\flask\app.py"", line 1813, in full_dispatch_request
+ rv = self.dispatch_request()
+ File ""D:\udd_arch_tool\venv\lib\site-packages\flask\app.py"", line 1799, in dispatch_request
+ return self.view_functions[rule.endpoint](**req.view_args)
+ File ""D:\udd_arch_tool\venv\lib\site-packages\flask_cors\decorator.py"", line 128, in wrapped_function
+ resp = make_response(f(*args, **kwargs))
+ File ""D:\udd_arch_tool\pyuddplugin\route_xmlexport\routes.py"", line 38, in ws_export_session_data
+ logger=app_logger)
+ File ""D:\udd_arch_tool\venv\lib\site-packages\profilehooks.py"", line 736, in new_fn
+ return fp(*args, **kw)
+ File ""D:\udd_arch_tool\venv\lib\site-packages\profilehooks.py"", line 762, in __call__
+ return fn(*args, **kw)
+ File ""D:\udd_arch_tool\pyuddplugin\route_xmlexport\services.py"", line 108, in xml_export_service
+ objActiveWorkspce.udd_workspace_id)
+ File ""D:\udd_arch_tool\pyuddplugin\route_xmlexport\services.py"", line 140, in export_helper
+ failed_export_data = wf_auto_client_export_session_manager.run_export(udd_workspace_id)
+ File ""D:\udd_arch_tool\pyuddplugin\workflow\wf_export_session\autoclient_exportsessionmanager.py"", line 788, in run_export
+ export_type)
+ File ""D:\udd_arch_tool\pyuddplugin\workflow\wf_export_session\autoclient_exportsessionmanager.py"", line 156, in prepare_xml_export_data
+ datatype_short_name, element,udd_type_category,category)
+ File ""D:\udd_arch_tool\pyuddplugin\workflow\wf_export_session\autoclient_exportsessionmanager.py"", line 524, in prepare_xml_export_dataType
+ udd_sub_element_idt_ref.get('shortName'),
+AttributeError: 'NoneType' object has no attribute 'get'","Version: 1.9.20191201
+Build Id: 12/17/2019 10.30",mrunal.kulkarni,,,,,,,,,,,,,,,,18/Dec/19 3:20 PM;mrunal.kulkarni;Screenshot (388).png;http://kpitjira.kpit.com/secure/attachment/13278/Screenshot+%28388%29.png,,,,,,,,,,,,0|zs0nf4:,,,,,,,,,,,,,
+Unable to map Data Element in foundation port,UBT-1264,15185,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,bhaskar.newase,neeraj.badade,neeraj.badade,17/Dec/19 3:10 PM,18/Dec/19 11:41 AM,20/Dec/19 5:58 PM,,,,,0,,,"Version: 1.9.20191201
+Build Id: 12/17/2019 10.30",neeraj.badade,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0ne8:,,,,,,,,,,,,,
+2 different Data elements with same interface (autosar path) and different data storage type should be restricted ,UBT-1256,15177,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,aatish.gawas,aatish.gawas,16/Dec/19 8:53 PM,16/Dec/19 8:53 PM,20/Dec/19 5:58 PM,,,,,0,,"2 different Data elements with same interface (autosar path) and different data storage type should be restricted
+
+ 
+
+For now need to put in backlog but need to fix in future release",,aatish.gawas,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0ncg:,,,,,,,,,,,,,
+"[SWC]: ""i[0].list.filter is not a function"" is showing when SWC proceed to check in ",UBT-1252,15172,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,rohit.bhosale,rohit.bhosale,rohit.bhosale,15/Dec/19 11:27 AM,20/Dec/19 5:34 PM,20/Dec/19 5:25 PM,,,,,0,,"UDD (Unified Design Dictionary)
+Version: 1.9.20190601
+Build Id: 12/15/2019 09.30
+
+ 
+
+Observation : 
+
+SWC is 3U
+
+All Calibration 2U
+ # SWC proceed to checked in from unresolved
+
+Observation
+ # Error is showing : ""i[0].list.filter is not a function""
+ # SWC is showing correct version.
+ # Calibration version is showing correct version
+
+PFA
+
+ ",,rohit.bhosale,vibhavari.gundecha,,,,,,,,,,,,,,,15/Dec/19 11:27 AM;rohit.bhosale;Screenshot (35).png;http://kpitjira.kpit.com/secure/attachment/13238/Screenshot+%2835%29.png,15/Dec/19 11:27 AM;rohit.bhosale;Screenshot (37).png;http://kpitjira.kpit.com/secure/attachment/13237/Screenshot+%2837%29.png,,,,,,,,,,,0|zs0nbc:,,,"20/Dec/19 5:34 PM;vibhavari.gundecha;I am not able to reproduce the issue.
+
+[~rohit.bhosale] Could you please re-verify.
+
+ ",,,,,,,,,,
+Not able to delete dev work-space,UBT-1243,15163,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,pravin.bhendarkar,siddharth.patel,siddharth.patel,15/Dec/19 10:29 AM,16/Dec/19 8:36 AM,20/Dec/19 5:58 PM,,,,,0,,1.Try to delete dev workspace ,,siddharth.patel,,,,,,,,,,,,,,,,15/Dec/19 10:29 AM;siddharth.patel;screenshot-1.png;http://kpitjira.kpit.com/secure/attachment/13225/screenshot-1.png,,,,,,,,,,,,0|zs0n9c:,,,,,,,,,,,,,
+CS sub-Operations with different versions are listed,UBT-1241,15161,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,bhaskar.newase,mrunal.kulkarni,mrunal.kulkarni,14/Dec/19 3:23 PM,18/Dec/19 11:39 AM,20/Dec/19 5:58 PM,,,,,0,,"# Create a CS Operation with 2 sub-operations and Deliver it.
+ # Accept in another WS.
+ # Edit by adding sub-operation and Deliver it.
+ # Go to previous Ws.
+ # Edit the CS by deleting one sub-operation.
+ # Try to deliver it.
+ # Merge will be triggered.
+ # Override changes.
+ # now deliver the CS.
+ # Compare the WS with stream.
+ # Observe that other operations are listed in incoming.
+ # Accept them.
+ # Observe that versions are different.","Version: 1.9.20190601
+Build Id: 12/14/2019 12.30",mrunal.kulkarni,,,,,,,,,,,,,,,,14/Dec/19 3:23 PM;mrunal.kulkarni;Screenshot (378).png;http://kpitjira.kpit.com/secure/attachment/13223/Screenshot+%28378%29.png,,,,,,,,,,,,0|zs0n8w:,,,,,,,,,,,,,
+CS Operation gets delivered even Enum consumed is in Complete State.,UBT-1237,15156,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vishwadip.more,swapnali.jadhav,swapnali.jadhav,14/Dec/19 9:38 AM,14/Dec/19 9:38 AM,20/Dec/19 5:58 PM,,,,,0,,"# Create Enum and Complete the same.
+ # Create CS Operation.
+ # Create two Sub operations using Enum and ADT.
+ # Complete CS Operation.
+ # Compare Workspace with stream.
+ # Observe one sub operation is listed in Outgoing dependent conflict where as other is listed in outgoing.
+ # Deliver CS from Outgoing changes.
+ # CS Operation gets delivered even Enum consumed is in Complete State.","Version: 1.9.20190601
+Build Id: 12/14/2019 07.30",swapnali.jadhav,,,,,,,,,,,,,,,,14/Dec/19 9:36 AM;swapnali.jadhav;Screenshot (47).png;http://kpitjira.kpit.com/secure/attachment/13219/Screenshot+%2847%29.png,,,,,,,,,,,,0|zs0n7s:,,,,,,,,,,,,,
+Unable able to Compare from dependency conflict tab.,UBT-1233,15148,Bug,In Review,UBT,UDD Bug tracker,software,amlendu,,,Medium,,sayali.nemade,swapnali.jadhav,swapnali.jadhav,12/Dec/19 2:38 PM,16/Dec/19 12:06 PM,20/Dec/19 4:27 PM,,,,,0,,"# Create CS operation.
+ # Edit SwC and create Port using CS Operation.
+ # Try to complete SwC.- Dependent Element tab opens on UI.
+ # Try to compare SwC.
+ # Observe error message in logger.","Version: 1.9.20190601
+Build Id: 12/09/2019 12.30",swapnali.jadhav,vishwadip.more,,,,,,,,,,,,,,,12/Dec/19 2:37 PM;swapnali.jadhav;Screenshot (46).png;http://kpitjira.kpit.com/secure/attachment/13172/Screenshot+%2846%29.png,,,,,,,,,,,,0|zs0n60:,,,16/Dec/19 12:06 PM;vishwadip.more;Addgin interface id in resposne has fixed this issue. Assigning this to Sayali for document attachment..,,,,,,,,,,
+[Compare with stream]: SWC is listed twice under outgoing/Incoming section while comparing with stream.,UBT-1230,15126,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,md.hassan,md.hassan,09/Dec/19 2:58 PM,19/Dec/19 3:40 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create SWC.
+ # Complete the same.
+ # Compare with stream and observe.
+
+Actual: SWC is listed twice under outgoing/Incoming section.
+
+Expected: SWC should be listed only once.","Version: 1.9.20190601
+Build Id: 12/09/2019 12.30",md.hassan,vishwadip.more,,,,,,,,,,,,,,,09/Dec/19 2:51 PM;md.hassan;Screenshot (123).png;http://kpitjira.kpit.com/secure/attachment/13148/Screenshot+%28123%29.png,,,,,,,,,,,,0|zs0n14:,,,19/Dec/19 3:39 PM;vishwadip.more;Not reproducible on current build 12/19/2019 08.30. ,,,,,,,,,,
+UDD allows to edit Stream selection in Edit Developer WS workflow.,UBT-1228,15119,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,06/Dec/19 12:12 PM,06/Dec/19 1:48 PM,20/Dec/19 5:58 PM,,,,,0,,"User should not be allowed to change Streams.
+
+Steps:
+ # Create WS.
+ # Select Edit by Right Clicking on WS name.
+ # Observe that UDD allows to change stream.
+
+Expected: User should not be allowed to change the stream.","Version: 1.9.20190601
+Build Id: 12/02/2019 10.00",mrunal.kulkarni,,,,,,,,,,,,,,,,06/Dec/19 12:12 PM;mrunal.kulkarni;Screenshot (372).png;http://kpitjira.kpit.com/secure/attachment/13089/Screenshot+%28372%29.png,,,,,,,,,,,,0|zs0mzk:,,,,,,,,,,,,,
+Not able to view Cal Scalar from GR pane when Bit mask Enum is associated with the same.,UBT-1218,15108,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,swapnali.jadhav,swapnali.jadhav,05/Dec/19 3:41 PM,16/Dec/19 11:59 AM,20/Dec/19 5:58 PM,,,,,0,,"# Create Bit mask Enum and Complete the same.
+ # Edit or Create SwC.
+ # Create Cal Scalar using same Enum.
+ # Try to view Scalar from GR pane.
+ # Observe error in logger.","Version: 1.9.20190601
+Build Id: 12/02/2019 10.00",omkarb2,swapnali.jadhav,,,,,,,,,,,,,,,05/Dec/19 3:41 PM;swapnali.jadhav;Screenshot (38).png;http://kpitjira.kpit.com/secure/attachment/13079/Screenshot+%2838%29.png,,,,,,,,,,,,0|zs0mx4:,,,16/Dec/19 11:59 AM;omkarb2;[~nilesh.patil] This seems to be some back-end DTO conversion issue please transfer it to respective developer as it is not a UI issue.,,,,,,,,,,
+Application Elements are shown in Outgoing when Compared with Stream.,UBT-1210,15099,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,04/Dec/19 5:45 PM,04/Dec/19 5:45 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create an Application Workspace.
+ # Accept GR Elements.
+ # Publish the Application.
+ # Create a Stream and Workspace from that Stream.
+ # Now create a Enumeration and deliver it to the Application Stream.
+
+ 
+
+*Observation: Enumerations and Mode Declaration from  Applications are also listed in Outgoing. But Once the first Enumeration is deliverd then it is not shown.*","Version: 1.9.20190601
+Build Id: 12/02/2019 10.00",mrunal.kulkarni,,,,,,,,,,,,,,,,04/Dec/19 5:45 PM;mrunal.kulkarni;Screenshot (359).png;http://kpitjira.kpit.com/secure/attachment/13069/Screenshot+%28359%29.png,,,,,,,,,,,,0|zs0mv4:,,,,,,,,,,,,,
+Multi-App: When SWc is accepted it brings the missing version of ModeSwitch.,UBT-1208,15097,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,04/Dec/19 4:02 PM,04/Dec/19 4:02 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create a Application WS.
+ # Accept any Swc which contains mode Switch Port.
+ # Save.
+ # Go to GR Pane
+ # Observe that Mode Switch version is missing","Version: 1.9.20190601
+Build Id: 12/02/2019 10.00",mrunal.kulkarni,,,,,,,,,,,,,,,,04/Dec/19 4:02 PM;mrunal.kulkarni;Screenshot (358).png;http://kpitjira.kpit.com/secure/attachment/13063/Screenshot+%28358%29.png,,,,,,,,,,,,0|zs0muo:,,,,,,,,,,,,,
+Multi-Application: Elements can be removed after publishing the Application,UBT-1203,15090,Bug,In Review,UBT,UDD Bug tracker,software,amlendu,,,Medium,,Vinay.Vennu,mrunal.kulkarni,mrunal.kulkarni,03/Dec/19 3:53 PM,12/Dec/19 12:53 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create Application.
+ # Accept Elements.
+ # Publish Application.
+ # Open Published Application WS.
+ # Remove Elements.
+ # Observe that Elements can be removed.
+
+Expected: Elements should not be removed after publishing.","Version: 1.9.20190601
+Build Id: 12/02/2019 10.00",mrunal.kulkarni,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0mt4:,,,,,,,,,,,,,
+Sync SwC dependency button is enabled even if dependent elements are in Complete State,UBT-1196,15083,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,swapnali.jadhav,swapnali.jadhav,swapnali.jadhav,02/Dec/19 11:04 AM,16/Dec/19 7:40 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create CS/DE.
+ # Create SwC and consume CS/DE.
+ # Complete CS/DE and SwC.
+ # Compare WS with Stream.
+ # Observe Sync SwC dependency button is enabled.","Version: 1.9.20190601
+Build Id: 12/02/2019 10.00",swapnali.jadhav,vishwadip.more,,,,,,,,,,,,,,,02/Dec/19 10:57 AM;swapnali.jadhav;Screenshot (30).png;http://kpitjira.kpit.com/secure/attachment/13025/Screenshot+%2830%29.png,,,,,,,,,,,,0|zs0mrk:,,,"16/Dec/19 7:40 PM;vishwadip.more;Sync button gets enable when there is state difference between elments in SWC BOM and WS BOM.
+
+In Scenario mentioned above, SWC BOM contains DE/CS with element status 'U' and WS BOM contains DE/CS element status 'C'. To remove this inconsistency Sync button get enable. After Sync, elemmt status in SWC BOM gets updated to 'C'. And Sync button gets disable.
+
+ 
+
+Assigning again to Swapnali for re verification.",,,,,,,,,,
+"Warning popup is displayed on UI when user tries to ""Revert all"" elements from unresolved changes",UBT-1184,15059,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vibhavari.gundecha,neeraj.badade,neeraj.badade,25/Nov/19 3:43 PM,25/Nov/19 3:43 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create any GR elements.
+ # Right click on element node from unresolved changes and select Revert all.
+
+*Actual:* Warning popup of deleting changeset is displayed on UI.
+
+*Expected:* Elements shall be reverted successfully from unresolved changes without any warning.","Version: 1.9.20190601
+Build Id: 11/25/2019 09.30",neeraj.badade,,,,,,,,,,,,,,,,25/Nov/19 3:43 PM;neeraj.badade;Revert all warning.png;http://kpitjira.kpit.com/secure/attachment/12948/Revert+all+warning.png,,,,,,,,,,,,0|zs0mm8:,,,,,,,,,,,,,
+Dependency shown only for one Port when multiple Ports are created with one Interface.,UBT-1183,15058,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,25/Nov/19 2:54 PM,25/Nov/19 2:54 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a DE and Deliver it.
+ # Create a SWC.
+ # Create two Ports with same DE of different name.
+ # Now Deliver the SWC.
+ # Now Edit the DE and deliver it.
+ # Check for Dependency at Workspace level.
+ # Observe that Dependency is shown for one Port only.
+ # Edit the SWC map the next version of DE only for one port.
+ # Observe that user is able to complete the SWc without conflict. ","Version: 1.9.20190601
+Build Id: 11/25/2019 09.30",mrunal.kulkarni,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0mm0:,,,,,,,,,,,,,
+[UDD][Calibration-Version]:Wrong calibration version is showing on element history page,UBT-1171,15014,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,rohit.bhosale,rohit.bhosale,rohit.bhosale,18/Nov/19 2:23 PM,12/Dec/19 12:52 PM,12/Dec/19 12:00 PM,,,,,0,,"UDD (Unified Design Dictionary)
+Version: 1.9.20190601
+Build Id: 11/15/2019 08.15
+
+Tested on above build
+
+Steps to reproduce
+ # Create SWC and ADD Break-point and Lookup
+ # proceed to complete state 
+ # Again Edit the Break-point and Lookup and observe version
+
+Obsevation
+
+SWC version is 2U which is correct but Break point and Lookup version is showing 2C",,rohit.bhosale,Vinay.Vennu,,,,,,,,,,,,,,,18/Nov/19 2:38 PM;rohit.bhosale;image-2019-11-18-14-37-12-412.png;http://kpitjira.kpit.com/secure/attachment/12837/image-2019-11-18-14-37-12-412.png,18/Nov/19 2:42 PM;rohit.bhosale;Screenshot (25).png;http://kpitjira.kpit.com/secure/attachment/12838/Screenshot+%2825%29.png,,,,,,,,,,,0|zs0mc8:,,,12/Dec/19 12:51 PM;Vinay.Vennu;This bug is not reproduceable  please verify and close it,,,,,,,,,,
+Merge is not Triggered when user user creates a SWC in another WS and Delivered in Stream where Parent is not present.,UBT-1166,15008,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,sayali.nemade,mrunal.kulkarni,mrunal.kulkarni,14/Nov/19 2:56 PM,14/Nov/19 2:56 PM,15/Nov/19 4:23 PM,,,,,0,,"Steps:
+
+Steps:
+ 1. Create SWC and deliver to stream
+ 2. Switch workspace and accept the delivered SWC.
+ 3. Edit the accepted SWC.
+ 4. Save SWC and deliver to same stream.
+ 5. Switch to previous workspace and edit SWC.
+ 6. Save and complete the SWC.
+ 7. Compare workspace with stream and Merge SWC.
+ 8. Deliver the merged SWC
+ 9. Now create a SWC in 3rd Workspace.
+ 10. Deliver the SWC in same Stream.
+
+Actual: merge is not triggered.
+
+Expected: Merge should be triggered","Version: 1.9.20190601
+Build Id: 11/06/2019 15.15",mrunal.kulkarni,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0maw:,,,,,,,,,,,,,
+ All the SwCs are not shown in outgoing if conflict is present for any one SWC,UBT-1159,15001,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,swapnali.jadhav,swapnali.jadhav,swapnali.jadhav,11/Nov/19 5:29 PM,27/Nov/19 9:35 AM,19/Nov/19 2:41 PM,,,,,0,,"# Create DE and Complete.
+ # Create SwC and Create Port using DE.
+ # Complete SwC.
+ # Deliver DE and SwC.
+ # Create new SwC and complete.
+ # Edit previous SwC and Complete.
+ # Edit DE.
+ # Compare Workspace with stream.
+ # Observe both SwC are not shown in outgoing.","Version: 1.9.20190601
+Build Id: 11/06/2019 15.15",swapnali.jadhav,vishwadip.more,,,,,,,,,,,,,,,11/Nov/19 5:29 PM;swapnali.jadhav;Screenshot (7).png;http://kpitjira.kpit.com/secure/attachment/12782/Screenshot+%287%29.png,,,,,,,,,,,,0|zs0m9c:,,,26/Nov/19 5:07 PM;vishwadip.more;Issue is not reproducible.,,,,,,,,,,
+Dependency conflict is shown after reverting conflicting element from unresolved state.,UBT-1157,14999,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vishwadip.more,swapnali.jadhav,swapnali.jadhav,11/Nov/19 2:43 PM,11/Nov/19 2:43 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create Enum and complete.
+ # Create SwC.
+ # Create IRV/Local variable using same Enum.
+ # Edit Enum and check for dependency conflict.-Dependency conflict is shown.
+ # Revert Enum and Again check for dependency conflict.
+
+Actual: Observe Dependency conflict is shown even there is no dependency.
+
+Expected: Dependency conflict shall not be shown.","Version: 1.9.20190601
+Build Id: 11/06/2019 15.15",swapnali.jadhav,,,,,,,,,,,,,,,,11/Nov/19 1:18 PM;swapnali.jadhav;Screenshot (3).png;http://kpitjira.kpit.com/secure/attachment/12780/Screenshot+%283%29.png,,,,,,,,,,,,0|zs0m8w:,,,,,,,,,,,,,
+Workspace version of SwC is wrong in dependency conflict tab,UBT-1153,14995,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vishwadip.more,swapnali.jadhav,swapnali.jadhav,11/Nov/19 10:43 AM,11/Nov/19 10:43 AM,20/Dec/19 5:58 PM,,,,,0,,"# Create CS Operation and Complete.
+ # Create SwC and create port using CS operation.
+ # Complete SwC.
+ # Edit CS Operation and check for conflict.
+ # Workspace version of SwC is wrong in dependency conflict tab.","Version: 1.9.20190601
+Build Id: 11/06/2019 15.15",swapnali.jadhav,,,,,,,,,,,,,,,,11/Nov/19 10:43 AM;swapnali.jadhav;Screenshot (1).png;http://kpitjira.kpit.com/secure/attachment/12764/Screenshot+%281%29.png,,,,,,,,,,,,0|zs0m80:,,,,,,,,,,,,,
+Dependency conflict shown for only one Local Variable.,UBT-1150,14992,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vishwadip.more,swapnali.jadhav,swapnali.jadhav,09/Nov/19 3:17 PM,26/Nov/19 4:23 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create two Enums and complete.
+ # Create SwC.
+ # Add two Local Variables using created Enums.
+ # Edit both the enums.
+ # Check for dependency conflict.
+
+*Actual:* Dependency conflict shown for only one Local Variable ","Version: 1.9.20190601
+Build Id: 11/06/2019 15.15",neeraj.badade,swapnali.jadhav,vishwadip.more,,,,,,,,,,,,,,11/Nov/19 11:59 AM;swapnali.jadhav;Screenshot (2).png;http://kpitjira.kpit.com/secure/attachment/12770/Screenshot+%282%29.png,09/Nov/19 2:38 PM;swapnali.jadhav;Screenshot (472).png;http://kpitjira.kpit.com/secure/attachment/12755/Screenshot+%28472%29.png,09/Nov/19 2:38 PM;swapnali.jadhav;Screenshot (473).png;http://kpitjira.kpit.com/secure/attachment/12756/Screenshot+%28473%29.png,26/Nov/19 4:23 PM;neeraj.badade;Screenshot (555).png;http://kpitjira.kpit.com/secure/attachment/12960/Screenshot+%28555%29.png,,,,,,,,,0|zs0m7c:,,,"09/Nov/19 3:54 PM;vishwadip.more;Not reproducible. 
+
+Swapnali, If possible provide more details.",11/Nov/19 11:59 AM;swapnali.jadhav;The issue is still reproducible. !Screenshot (2).png!,26/Nov/19 4:23 PM;neeraj.badade;Same issue occurs for IRV. !Screenshot (555).png!,,,,,,,,
+Complete All operation not performed for other elements if one element has dependency Conflict.,UBT-1146,14984,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vishwadip.more,mrunal.kulkarni,mrunal.kulkarni,08/Nov/19 12:00 PM,08/Nov/19 12:00 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create X number of Elements.( Create one Element with Enum.)
+ # Deliver all of them.
+ # Now Edit Enum and Keep it in Unresolved State.
+ # Edit all the X number of Elements and Check-In.
+ # Now Complete All.
+ # Observe that all the other Elements are also not Completed because of one Element Dependency Conflict.
+
+Expected: Other Elements should be Completed except the dependent Element.  ","Version: 1.9.20190601
+Build Id: 11/06/2019 15.15",mrunal.kulkarni,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0m5k:,,,,,,,,,,,,,
+UDD exports incorrect Implementation Policy of CS operation,UBT-1139,14977,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,sayali.nemade,neeraj.badade,neeraj.badade,07/Nov/19 3:54 PM,07/Nov/19 3:54 PM,20/Dec/19 5:58 PM,,,,,0,,"Create CS operation with Implementation Policy other than 'UseArgumentType'.
+Export CS operation and verify Implementation policy.","Version: 1.9.20190601
+Build Id: 11/06/2019 15.15",neeraj.badade,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0m40:,,,,,,,,,,,,,
+Element round trip inconsistency ,UBT-1125,14963,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,siddharth.patel,siddharth.patel,05/Nov/19 10:22 AM,05/Nov/19 10:23 AM,20/Dec/19 5:58 PM,,,,,0,,"1.Create a data element in UDD and export it.
+2.Then without change import it.
+3.UDD brings the element as modified due to change in Invalid Property.",,siddharth.patel,,,,,,,,,,,,,,,,05/Nov/19 10:23 AM;siddharth.patel;RoundTrip.png;http://kpitjira.kpit.com/secure/attachment/12658/RoundTrip.png,,,,,,,,,,,,0|zs0m0w:,,,,,,,,,,,,,
+UDD does not export Invalid policy and Invalid value,UBT-1113,14946,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,sayali.nemade,siddharth.patel,siddharth.patel,04/Nov/19 9:47 AM,13/Nov/19 6:46 PM,20/Dec/19 5:58 PM,,,,,0,,"1.Create a data element and export 
+Observe the Invalid policy and Invalid value in SystemDesk",,sayali.nemade,siddharth.patel,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0lx4:,,,"13/Nov/19 6:46 PM;sayali.nemade;Updated plugin for Invalid policy support.
+
+change for Invalid value is on hold.",,,,,,,,,,
+Newly created Port is not visible in Port drop down while editing Timing event,UBT-1098,14931,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,swapnali.jadhav,swapnali.jadhav,swapnali.jadhav,31/Oct/19 12:39 PM,11/Dec/19 11:44 AM,20/Dec/19 5:58 PM,,,,,0,,"# Edit or Create SwC.
+ # Create Foundation Port(Input) using Mode Switch Interface.
+ # Edit existing Timing event.
+ # Observe newly created Port is not visible in Port drop down.","Version: 1.9.20190601
+Build Id: 10/30/2019 10.30",omkarb2,swapnali.jadhav,Vinay.Vennu,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0lts:,,,20/Nov/19 3:19 PM;omkarb2;The port lists are fetched only once for timing event when the user clicks on the events tab for the first time. And when tried by ui to fetch the ports required for listing by the listing API on passing the category as SWC-TIMING-EVENT the api throws constraint voilation error where as the same api returns foundation ports with MSI on passing event category as SWC-MODE-SWITCH-EVENT. This issue cannot be resolved unless until the backend api returns ports for the timing event.,20/Nov/19 3:20 PM;omkarb2;[~nilesh.patil] Please re-assign the issue to backend developer.,11/Dec/19 11:44 AM;Vinay.Vennu;working as expected please verify....,,,,,,,,
+X-Input name gets cleared when user opens the 1D-breakpoint after delivering SWC.,UBT-1092,14925,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,mrunal.kulkarni,mrunal.kulkarni,31/Oct/19 11:31 AM,16/Dec/19 2:45 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a SWC.
+ # Create a Local Variable, Break-point.
+ # Select x-input category as Local Variable.
+ # Save 1D-Breakpoint.
+ # Deliver SWC.
+ # Edit SWC and open Breakpoint.
+
+Actual: Observe that the X-Input Name is cleared.
+
+Expected: The X-Input Name should not be cleared.
+
+Due to this when Calibration is opened from GR shows blank data for that field.
+
+*Note: Same for Lookup. X-Input Name name is cleared.*","Version: 1.9.20190601
+Build Id: 10/30/2019 10.30",mrunal.kulkarni,omkarb2,,,,,,,,,,,,,,,31/Oct/19 11:31 AM;mrunal.kulkarni;Screenshot (252).png;http://kpitjira.kpit.com/secure/attachment/12598/Screenshot+%28252%29.png,31/Oct/19 11:32 AM;mrunal.kulkarni;Screenshot (253).png;http://kpitjira.kpit.com/secure/attachment/12599/Screenshot+%28253%29.png,31/Oct/19 11:34 AM;mrunal.kulkarni;Screenshot (254).png;http://kpitjira.kpit.com/secure/attachment/12600/Screenshot+%28254%29.png,31/Oct/19 11:34 AM;mrunal.kulkarni;Screenshot (255).png;http://kpitjira.kpit.com/secure/attachment/12601/Screenshot+%28255%29.png,,,,,,,,,0|zs0lsg:,,,"16/Dec/19 2:45 PM;omkarb2;This a backend issue since the xinput id fields within the calibrations after delivering the swc are not returned properly the UI is showing the x input value as blank.
+[~nilesh.patil] : Please assign to a back-end developer.",,,,,,,,,,
+Init values are not shown properly on compare tab when structure is mapped to interfaces/SwC,UBT-1091,14924,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,omkarb2,swapnali.jadhav,swapnali.jadhav,31/Oct/19 11:20 AM,13/Nov/19 9:41 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create DE/CS/SwC and complete.
+ # Edit the same and map Structure as a data type.
+ # Now Compare element with its previous version.
+ # Observe int values are not shown properly.
+
+ ","Version: 1.9.20190601
+Build Id: 10/30/2019 10.30",swanand.mehta,swapnali.jadhav,,,,,,,,,,,,,UBT-1160,,31/Oct/19 10:24 AM;swapnali.jadhav;Screenshot (433).png;http://kpitjira.kpit.com/secure/attachment/12597/Screenshot+%28433%29.png,,,,,,,,,,,,0|zs0ls8:,,,"31/Oct/19 11:16 PM;swanand.mehta;Can we use same formatting as we show on UI in compare screen
+Please do IA and estimate ",,,,,,,,,,
+"Clicking ""Load Messages"" button in Log window throws js error",UBT-1088,14921,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,priyanka.pawar,aatish.gawas,aatish.gawas,30/Oct/19 7:42 PM,13/Dec/19 10:42 AM,20/Dec/19 5:58 PM,,,,,0,,"Step:
+
+1) Open Logger on UI by clicking on ""i"" button in status bar
+
+2) Then click on ""Load Messages"" button
+
+Error as follows displayed in status bar,
+
+""Unexpected token u in JSON at position 0""",,aatish.gawas,priyanka.pawar,sayali.nemade,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0lrk:,,,"14/Nov/19 11:32 AM;priyanka.pawar;RCA : 
+
+[https://localhost:3000/api/logger/getLogs] 
+
+Above url is not sending response. UI is expecting response in response.data.logs, hence the json parser is getting failed. Needs to be fixed from plugin side.",26/Nov/19 2:04 PM;sayali.nemade;Priyanka will check call for save api.,,,,,,,,,
+[UDD][Multi-App]:Application Workspace is created when User enters invalid RTC path.,UBT-1084,14916,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,rohit.bhosale,rohit.bhosale,rohit.bhosale,28/Oct/19 2:50 PM,04/Nov/19 11:28 AM,20/Dec/19 5:58 PM,,,,,0,,"UDD (Unified Design Dictionary)
+Version: 1.9.20190601
+Build Id: 10/25/2019 12.30
+
+Steps to reproduce:
+
+Create New Application and give invalid RTC path
+
+Observation :
+
+Application Work space is created when User enters invalid RTC path.",,rohit.bhosale,vibhavari.gundecha,,,,,,,,,,,,,,,04/Nov/19 11:28 AM;rohit.bhosale;Screenshot (17).png;http://kpitjira.kpit.com/secure/attachment/12643/Screenshot+%2817%29.png,,,,,,,,,,,,0|zs0lqg:,,,02/Nov/19 6:30 PM;vibhavari.gundecha;[~rohit.bhosale] Can you please elaborate steps in detail.,"04/Nov/19 11:25 AM;rohit.bhosale;1.Click on ""+"" button besides Integrator.
+
+2.Select ""New Application"" option
+
+3.Enter all the mandatory Fields like application name, Description and select COE.
+
+4.Enter invalid RTC path inside UDD workspace.
+
+5. Click on NEXT and close
+
+ 
+
+Observe .
+
+It is successfully created while invalid RTC path",,,,,,,,,
+Modified interfaces do not get removed from import session causing incorrect dependency conflict O(I),UBT-1076,14908,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,siddharth.patel,siddharth.patel,26/Oct/19 9:14 AM,13/Nov/19 9:24 PM,20/Dec/19 5:58 PM,,,,,0,,"1.Import SwC along with dependent data
+2.Now try merge data element and observe the error in logger
+Element moves to un-resolved changes but after import session is refreshed the elements are again visible
+
+Error : 
+""errorCode"":""A database malfunction occurred "",""detailMessage"":""A parent row cannot be deleted because the relationship \""UDD.PORT_COMM_SPEC.REF_130_DATA_ELEM\"" restricts the deletion.. SQLCODE=-532, SQLSTATE=23001, DRIVER=3.72.30 {prepstmnt 1826204278 \r\nDELETE FROM UDD.DATA_ELEM \r\n    WHERE I_DATA_ELEM IN (35455 ) \r\n} [code=-532, state=23001]""}",,kalerupchand,siddharth.patel,swanand.mehta,,,,,,,,,,,,,,26/Oct/19 9:14 AM;siddharth.patel;screenshot-1.png;http://kpitjira.kpit.com/secure/attachment/12561/screenshot-1.png,26/Oct/19 9:24 AM;siddharth.patel;screenshot-2.png;http://kpitjira.kpit.com/secure/attachment/12562/screenshot-2.png,07/Nov/19 1:48 PM;siddharth.patel;screenshot-3.png;http://kpitjira.kpit.com/secure/attachment/12724/screenshot-3.png,,,,,,,,,,0|zs0loo:,,,"28/Oct/19 6:58 PM;kalerupchand;I had not worked on import module because of that i am not able to find root cause hence assigning to [~swanand.mehta]
+
+I guess swc port referring to session elements after accepting into workspace because of that my be this issue is coming.","30/Oct/19 9:20 AM;siddharth.patel;I don't agree with the explanation,but still decreasing the priority of the defect","07/Nov/19 1:48 PM;siddharth.patel;Even when SwC is removed from import session.
+UDD still shows ""Could not remove element from import session due to dependency""
+But the element moves into un-resolved changes and when the import session is refreshed the elements re-appear
+[~aatish.gawas][~nilesh.patil] Can you look at this scenario ? 
+ !screenshot-3.png|thumbnail! ","13/Nov/19 9:21 PM;swanand.mehta;The workspace SWC is still connected to elements in import session through the use of port or other details
+
+User has not removed any dependency from import session so it is not possible to remove such elements",13/Nov/19 9:21 PM;swanand.mehta;Assigning to Nilesh as per comments from Siddtharth ,,,,,,
+[Mode Declaration]: On Transition value Disappear after accepting & editing Mode Declaration.,UBT-1069,14901,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,kalerupchand,md.hassan,md.hassan,25/Oct/19 5:45 PM,16/Nov/19 5:23 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create two Workspace.
+ # Create Mode Declaration in WS1.
+ # Deliver in a stream.
+ # Accept Mode Declaration in WS2.
+ # Edit and observe.
+
+Observation: On Transition value Disappear.","Version: 1.9.20190601
+Build Id: 10/25/2019 12.30",kalerupchand,md.hassan,,,,,,,,,,,,,,,16/Nov/19 5:22 PM;kalerupchand;Analysis done not able to reproduce the issue.png;http://kpitjira.kpit.com/secure/attachment/12829/Analysis+done+not+able+to+reproduce+the+issue.png,25/Oct/19 5:43 PM;md.hassan;Screenshot (110).png;http://kpitjira.kpit.com/secure/attachment/12558/Screenshot+%28110%29.png,,,,,,,,,,,0|zs0ln4:,,,16/Nov/19 5:23 PM;kalerupchand;not able to reproduce the issue,,,,,,,,,,
+Tool tip info is missing for all the versionable GR elements,UBT-1044,14873,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,bhaskar.newase,swapnali.jadhav,swapnali.jadhav,21/Oct/19 11:30 AM,21/Oct/19 3:40 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create GR Element.
+ # Observe tool tip info is missing.","Version: 1.9.20190601
+Build Id: 10/19/2019 09.30",swapnali.jadhav,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0lgw:,,,,,,,,,,,,,
+UDD does not bring dependencies along with parent after Version Conflict Merge,UBT-1037,14866,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,neeraj.badade,neeraj.badade,19/Oct/19 9:07 AM,13/Nov/19 6:45 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create SWC and deliver to stream.
+ # Switch workspace and accept SWC.
+ # Create Data Element and deliver to stream.
+ # Create Port in SWC using Data Element.
+ # Save and Deliver SWC to same stream.
+ # Switch to previous workspace.
+ # Edit SWC and complete the same.
+ # Compare workspace with same stream.
+ # Merge SWC and accept incoming changes.
+
+*Actual:* UDD does not bring Dependencies i.e. Data Element after Merging.
+
+*Expected:* UDD shall bring Dependencies along with SWC after merge","Version: 1.9.20190601
+Build Id: 10/17/2019 17.30",neeraj.badade,swanand.mehta,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0lfc:,,,"13/Nov/19 6:27 PM;swanand.mehta;No such requirement was given for merge or at the time of agile workflow implementation
+
+[~nilesh.patil] Either reject or put it on hold 
+
+",,,,,,,,,,
+When current Workspace is Compared with Integration it gives Option to accept and deliver,UBT-1036,14865,Bug,In Review,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,mrunal.kulkarni,mrunal.kulkarni,18/Oct/19 7:02 PM,28/Nov/19 1:02 PM,22/Nov/19 3:50 PM,,,,,0,,"Steps:
+ # Create a Element and Deliver it.
+ # Now Right Click on Current Workspace.
+ # Compare the Workspace with Integration.
+
+Actual: Observe that UDD allows to Deliver and accept the changes in Integration.
+
+Expected: UDD should not allow to Deliver and accept the changes in Integration.","Version: 1.9.20190601
+Build Id: 10/18/2019 09.30",gitlab,mrunal.kulkarni,nilesh.patil,omkarb2,swanand.mehta,,,,,,,,,,,,21/Oct/19 11:32 PM;omkarb2;Impact Analysis Document -UBT-1036.docx;http://kpitjira.kpit.com/secure/attachment/12394/Impact+Analysis+Document+-UBT-1036.docx,18/Oct/19 7:02 PM;mrunal.kulkarni;Screenshot (185).png;http://kpitjira.kpit.com/secure/attachment/12335/Screenshot+%28185%29.png,18/Oct/19 7:02 PM;mrunal.kulkarni;Screenshot (186).png;http://kpitjira.kpit.com/secure/attachment/12334/Screenshot+%28186%29.png,,,,,,,,,,0|zs0lf4:,,,19/Oct/19 7:12 PM;swanand.mehta;Moving on omkar's name since he worked on deliver and accept part of compare stream along with Vibha,"22/Oct/19 4:06 PM;omkarb2;RCA is done.
+
+Review is pending for RCA & Implementation.","22/Oct/19 10:53 PM;gitlab;[Omkar Badave|https://gitlab.kpit.com/omkarb2] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/0b3dcab07fa36efde56a3db052b3fc3f5d36b512]:
+'[UBT-1036] : Disabled the context menu option for comparision with integration'",05/Nov/19 9:51 AM;nilesh.patil;Omkar needs to review all the use cases with Amit/Siddharth and Swanand before pushing marking done,,,,,,,
+Workspace BOM is not created for Workspace with same name,UBT-1016,14845,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,neeraj.badade,neeraj.badade,16/Oct/19 6:59 PM,16/Oct/19 6:59 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+1. Created Elements and delivered to stream in Wp1.
+2. Logged in with other credentials.
+3. Created workspace with same name i.e. Wp1. UDD allowed to create workspace with same name
+4. Compared workspace with stream and tried to accept elements.
+5. Message was shown in logger and Workspace BOM was not created.","Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",neeraj.badade,,,,,,,,,,,,,,,,16/Oct/19 6:52 PM;neeraj.badade;Unable to create workspace BOM.png;http://kpitjira.kpit.com/secure/attachment/12310/Unable+to+create+workspace+BOM.png,,,,,,,,,,,,0|zs0lao:,,,,,,,,,,,,,
+Error is shown in logger when user tries to edit CS operation from Dependency conflict tab,UBT-1014,14843,Bug,In Review,UBT,UDD Bug tracker,software,amlendu,,,Medium,,sayali.nemade,swapnali.jadhav,swapnali.jadhav,16/Oct/19 5:44 PM,16/Dec/19 12:19 PM,20/Dec/19 5:58 PM,,,,,0,,,"Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",swapnali.jadhav,vishwadip.more,,,,,,,,,,,,,,,16/Oct/19 5:44 PM;swapnali.jadhav;Screenshot (413).png;http://kpitjira.kpit.com/secure/attachment/12306/Screenshot+%28413%29.png,,,,,,,,,,,,0|zs0la8:,,,16/Dec/19 12:18 PM;vishwadip.more;Addgin interface id in resposne has fixed this issue. Assigning this to Sayali for document attachment..,,,,,,,,,,
+Not able to accept some of the SWCs in Application WS.,UBT-1013,14842,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,pravin.bhendarkar,mrunal.kulkarni,mrunal.kulkarni,16/Oct/19 4:31 PM,10/Dec/19 4:01 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Accept a SWC.
+
+Actual: A error is thrown ""response is not defined""
+
+Expected: error should not be thrown.
+
+Note: This occurs for some SWC only.","Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",mrunal.kulkarni,,,,,,,,,,,,,,,,16/Oct/19 4:31 PM;mrunal.kulkarni;Screenshot (173).png;http://kpitjira.kpit.com/secure/attachment/12303/Screenshot+%28173%29.png,16/Oct/19 4:31 PM;mrunal.kulkarni;Screenshot (174).png;http://kpitjira.kpit.com/secure/attachment/12302/Screenshot+%28174%29.png,16/Oct/19 4:31 PM;mrunal.kulkarni;Screenshot (175).png;http://kpitjira.kpit.com/secure/attachment/12301/Screenshot+%28175%29.png,16/Oct/19 4:31 PM;mrunal.kulkarni;Screenshot (176).png;http://kpitjira.kpit.com/secure/attachment/12300/Screenshot+%28176%29.png,,,,,,,,,0|zs0la0:,,,,,,,,,,,,,
+Applications are not listed in the streams tab if they are created and published by other user,UBT-1010,14839,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vibhavari.gundecha,mrunal.kulkarni,mrunal.kulkarni,16/Oct/19 3:35 PM,11/Nov/19 9:54 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a Application and Publish.
+ # Ask other user to create a stream in that Application
+ # Observe your Streams tab.
+
+Actual: Applications published by other users not listed until refreshed.
+
+Expected: Applications published by other users should be listed.","Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",mrunal.kulkarni,siddharth.patel,,,,,,,,,,,,,,,16/Oct/19 3:35 PM;mrunal.kulkarni;Screenshot (166).png;http://kpitjira.kpit.com/secure/attachment/12297/Screenshot+%28166%29.png,16/Oct/19 3:35 PM;mrunal.kulkarni;Screenshot (167).png;http://kpitjira.kpit.com/secure/attachment/12296/Screenshot+%28167%29.png,,,,,,,,,,,0|zs0l9c:,,,16/Oct/19 4:02 PM;siddharth.patel;Application : PMBD_Application_2,,,,,,,,,,
+Save button is disabled when timing event is edited by selecting/deselecting Modes,UBT-1008,14837,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,swapnali.jadhav,swapnali.jadhav,swapnali.jadhav,16/Oct/19 3:32 PM,13/Nov/19 4:35 PM,20/Dec/19 5:58 PM,,,,,0,,"# Edit SwC and Create foundation port using Mode Switch Interface.
+ # Create Timing event using newly created port.
+ # Again try to edit same timing event by selecting/deselecting Modes.
+ # Observe save button is disabled.","Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",bhaskar.newase,swapnali.jadhav,,,,,,,,,,,,,,,16/Oct/19 3:28 PM;swapnali.jadhav;Screenshot (412).png;http://kpitjira.kpit.com/secure/attachment/12295/Screenshot+%28412%29.png,,,,,,,,,,,,0|zs0l8w:,,,13/Nov/19 4:35 PM;bhaskar.newase;Not able to reproduce on current build.,,,,,,,,,,
+UDD does not display Stream type while creating a workspace using CoE Stream,UBT-1003,14832,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,vibhavari.gundecha,swapnali.jadhav,swapnali.jadhav,16/Oct/19 2:08 PM,11/Nov/19 10:22 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create new Dev WS from CoE stream.
+ # Observe Stream Type is not displayed.","Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",swapnali.jadhav,,,,,,,,,,,,,,,,16/Oct/19 2:07 PM;swapnali.jadhav;Screenshot (409).png;http://kpitjira.kpit.com/secure/attachment/12287/Screenshot+%28409%29.png,,,,,,,,,,,,0|zs0l7s:,,,,,,,,,,,,,
+[Multi-Application]:Selected Integration of Published Application brings wrong Data.,UBT-995,14824,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,pravin.bhendarkar,mrunal.kulkarni,mrunal.kulkarni,16/Oct/19 10:44 AM,05/Dec/19 11:00 AM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # I created an Empty Application.
+ # Accepted an Enum and Published the Application.
+ # Now created a Stream under the Integration.
+ # Created a WS using the Same Stream.
+ # The Enum accepted is listed in GR Pane.
+ # Now again create an Empty application and Accept another Enum and Publish it.
+ # Create a Stream under that Application.
+ # Now create a WS using that Stream.
+
+*Actual:* Enumeration which was previously accepted in 1^st^  Application is listed.
+
+*Expected:* Enumeration listed in that Application WS should be listed.","Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",mrunal.kulkarni,pravin.bhendarkar,vibhavari.gundecha,,,,,,,,,,,,,,16/Oct/19 10:44 AM;mrunal.kulkarni;Screenshot (100).png;http://kpitjira.kpit.com/secure/attachment/12268/Screenshot+%28100%29.png,16/Oct/19 10:44 AM;mrunal.kulkarni;Screenshot (101).png;http://kpitjira.kpit.com/secure/attachment/12267/Screenshot+%28101%29.png,16/Oct/19 10:44 AM;mrunal.kulkarni;Screenshot (102).png;http://kpitjira.kpit.com/secure/attachment/12266/Screenshot+%28102%29.png,16/Oct/19 10:44 AM;mrunal.kulkarni;Screenshot (96).png;http://kpitjira.kpit.com/secure/attachment/12272/Screenshot+%2896%29.png,16/Oct/19 10:44 AM;mrunal.kulkarni;Screenshot (97).png;http://kpitjira.kpit.com/secure/attachment/12271/Screenshot+%2897%29.png,16/Oct/19 10:44 AM;mrunal.kulkarni;Screenshot (98).png;http://kpitjira.kpit.com/secure/attachment/12270/Screenshot+%2898%29.png,16/Oct/19 10:44 AM;mrunal.kulkarni;Screenshot (99).png;http://kpitjira.kpit.com/secure/attachment/12269/Screenshot+%2899%29.png,,,,,,0|zs0l60:,,,"14/Nov/19 12:14 PM;vibhavari.gundecha;Tried same scenario and did analysis, found that plugin is getting false values from server.
+
+Assigning to [~pravin.bhendarkar] as it has back-end changes.
+
+ ","05/Dec/19 11:00 AM;pravin.bhendarkar;Need to check on Plugin side
+
+ 
+
+ ",,,,,,,,,
+Not able to bulk check-in elements,UBT-990,14819,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,siddharth.patel,siddharth.patel,15/Oct/19 10:01 AM,25/Oct/19 11:57 AM,20/Dec/19 5:58 PM,,,,,0,,"1.Import all the GR 
+2.Import into workspace enum first and complete them
+3.Import into workspace DE and try to bulk check-in 
+No response from UDD
+Api: https://udd.kpit.com/UDD/api/udd/bulkcheckin
+Workspace - PMBD_Application_1_DevWs_4
+TID : T0781SP
+There around 2208 Data elements in un-resolved changes",,gitlab,nilesh.patil,siddharth.patel,,,,,,,,,,,,,,23/Oct/19 12:20 PM;vishwadip.more;Code_review_checklist_UBT-990_UI.xlsx;http://kpitjira.kpit.com/secure/attachment/12421/Code_review_checklist_UBT-990_UI.xlsx,23/Oct/19 12:32 PM;Dhanashri.Patil;Code_review_checklist_UBT-990.xlsx;http://kpitjira.kpit.com/secure/attachment/12426/Code_review_checklist_UBT-990.xlsx,23/Oct/19 12:33 PM;bhaskar.newase;Impact Analysis Template - UBT-990.docx;http://kpitjira.kpit.com/secure/attachment/12427/Impact+Analysis+Template+-+UBT-990.docx,15/Oct/19 10:08 AM;siddharth.patel;Payload.txt;http://kpitjira.kpit.com/secure/attachment/12248/Payload.txt,15/Oct/19 10:01 AM;siddharth.patel;screenshot-1.png;http://kpitjira.kpit.com/secure/attachment/12247/screenshot-1.png,24/Oct/19 3:35 PM;siddharth.patel;screenshot-2.png;http://kpitjira.kpit.com/secure/attachment/12531/screenshot-2.png,,,,,,,0|zs0l4w:,,,"15/Oct/19 10:04 AM;nilesh.patil;Hi Amol,
+
+Please do RCA and then start working on this?
+
+RCA is mandatory before you start implementation","17/Oct/19 9:11 AM;gitlab;[Amol Gholase|https://gitlab.kpit.com/amolg11] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/33fa51528cc9b64c75b931e7bfc4eaf3b9409658]:
+'[UBT-990]code changes to make batch processing while bulk check in and'","17/Oct/19 12:10 PM;gitlab;[Dhanashri Patil|https://gitlab.kpit.com/dhanashrip1] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/1946ebf543026b925ac96f04174fdbda40f69dff]:
+'[UBT-990]API to get all operations by list of interface ids'","17/Oct/19 4:26 PM;gitlab;[Dhanashri Patil|https://gitlab.kpit.com/dhanashrip1] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/6a3d74f1fa412575805962f47601caf3d06c83fa]:
+'[UBT-990] Changes in API for getAll operations'","18/Oct/19 12:02 PM;gitlab;[Amol Gholase|https://gitlab.kpit.com/amolg11] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/f7597d3e4d3b87f65e6086215e032e56b02cfe76]:
+'[UBT-990]Changed response of API first reviewed by Amol'","18/Oct/19 2:32 PM;gitlab;[Bhaskar Bhausaheb Newase|https://gitlab.kpit.com/bhaskarbhaun] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/78e3cdf365d3d1f837bf449caaa2999b64f4a7c8]:
+'[UBT-990]: complete all batch process integration'","23/Oct/19 9:03 AM;gitlab;[Amol Gholase|https://gitlab.kpit.com/amolg11] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/4c9eebe3f7e315a03d58973457884f47e6b2a061]:
+'Merge branch 'development' into Defects/UBT-990'","23/Oct/19 1:20 PM;gitlab;[Amol Gholase|https://gitlab.kpit.com/amolg11] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/76d65baf3301d2496828d919b8c9b2609610adef]:
+'Merge branch 'development' into Defects/UBT-990'","23/Oct/19 1:33 PM;gitlab;[Amol Gholase|https://gitlab.kpit.com/amolg11] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/624ef6707990dbba5be13ce8ed97ff5639987d1f]:
+'Merge branch 'development' into Defects/UBT-990'","24/Oct/19 3:35 PM;siddharth.patel;Some elements are getting checked-in and some still re-main in un-resolved changes.There are no API failures
+ !screenshot-2.png|thumbnail! ","25/Oct/19 11:56 AM;siddharth.patel;After discussion with [~amit.suryawanshi] as user is not blocked changing the priority of the defect to medium
+[~swati.vaste] Take a note of this change"
+Error is shown in logger after overriding SwC.,UBT-989,14818,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,swapnali.jadhav,swapnali.jadhav,15/Oct/19 8:56 AM,11/Nov/19 10:24 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create SwC and Deliver.
+ # Switch WS and accept same SwC.
+ # Edit SwC and deliver to same Stream.
+ # Go to Previous WS, edit SwC.
+ # Try to deliver SwC.
+ # Select Override with WS option.
+ # Observe error in logger.","Version: 1.9.20190601
+Build Id: 10/14/2019 17.30",swapnali.jadhav,,,,,,,,,,,,,,,,15/Oct/19 8:55 AM;swapnali.jadhav;Logger error.png;http://kpitjira.kpit.com/secure/attachment/12244/Logger+error.png,,,,,,,,,,,,0|zs0l4o:,,,,,,,,,,,,,
+Elements does not take proper version when Name is edited from unresolved changes.,UBT-985,14814,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,kalerupchand,mrunal.kulkarni,mrunal.kulkarni,14/Oct/19 1:50 PM,11/Nov/19 10:24 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a Element with name which already exists.
+ # Edit the Element from Unresolved changes and give unique name.
+
+Actual: It still takes the old version.
+
+Expected: It should take version 1.","Version: 1.9.20190601
+Build Id: 10/10/2019 08.00",mrunal.kulkarni,,,,,,,,,,,,,,,,14/Oct/19 1:50 PM;mrunal.kulkarni;Screenshot (140).png;http://kpitjira.kpit.com/secure/attachment/12230/Screenshot+%28140%29.png,14/Oct/19 1:50 PM;mrunal.kulkarni;Screenshot (141).png;http://kpitjira.kpit.com/secure/attachment/12229/Screenshot+%28141%29.png,14/Oct/19 1:50 PM;mrunal.kulkarni;Screenshot (142).png;http://kpitjira.kpit.com/secure/attachment/12228/Screenshot+%28142%29.png,,,,,,,,,,0|zs0l3s:,,,,,,,,,,,,,
+Not able to delete Developer workspace,UBT-981,14810,Bug,Reopened,UBT,UDD Bug tracker,software,amlendu,,,Medium,Done,kalerupchand,siddharth.patel,siddharth.patel,14/Oct/19 9:00 AM,25/Nov/19 9:53 AM,20/Dec/19 5:58 PM,13/Nov/19 7:49 PM,,,,0,,,,gitlab,kalerupchand,siddharth.patel,,,,,,,,,,,,,,07/Nov/19 2:57 PM;kalerupchand;Code_review- UBT-981.xlsx;http://kpitjira.kpit.com/secure/attachment/12732/Code_review-+UBT-981.xlsx,13/Nov/19 7:49 PM;kalerupchand;Integration Testing Proof .png;http://kpitjira.kpit.com/secure/attachment/12797/Integration+Testing+Proof+.png,07/Nov/19 2:50 PM;kalerupchand;RCA_UBT-981.docx;http://kpitjira.kpit.com/secure/attachment/12729/RCA_UBT-981.docx,14/Oct/19 9:00 AM;siddharth.patel;screenshot-1.png;http://kpitjira.kpit.com/secure/attachment/12223/screenshot-1.png,25/Nov/19 9:53 AM;siddharth.patel;screenshot-2.png;http://kpitjira.kpit.com/secure/attachment/12939/screenshot-2.png,,,,,,,,0|zs0l2w:,,,"14/Oct/19 9:01 AM;siddharth.patel;TID : t0781sp
+Workspace name : PMBD_Application_1_DevWs_2 ","07/Nov/19 2:17 PM;gitlab;[Rupchand Kale|https://gitlab.kpit.com/rupchandk] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/cd748d5ab23328c78ce88bd9d027a3ab928d37a2]:
+'[UBT-981] Not able to delete Developer workspace issue resolved'",11/Nov/19 5:43 PM;kalerupchand;[~swanand.mehta] please check alternate solution,"13/Nov/19 9:37 AM;gitlab;[Amol Gholase|https://gitlab.kpit.com/amolg11] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/032f687cf009b3664b3ff0d47f2e944822f1090a]:
+'Merge branch 'development' into Support/UBT-981'",13/Nov/19 7:49 PM;kalerupchand;Integration Testing Done,"25/Nov/19 9:53 AM;siddharth.patel;Issue reproducible
+ !screenshot-2.png|thumbnail!  ",,,,,
+Enum is not accepted in MultiApp WS when SWC is accepted.,UBT-979,14807,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,11/Oct/19 5:44 PM,06/Nov/19 9:15 AM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a application WS.
+ # Accept the SWC consumes Enum.
+
+Actual: GR shows the Enum but the Status in Search GR is Incoming.
+
+Expected: Status should be accepted.
+
+Note: Due to this when user creates a Dev WS after publishing Enum is not listed in GR Pane.","Version: 1.9.20190601
+Build Id: 10/10/2019 08.00",mrunal.kulkarni,nilesh.patil,,,,,,,,,,,,,,,11/Oct/19 5:44 PM;mrunal.kulkarni;Screenshot (131).png;http://kpitjira.kpit.com/secure/attachment/12194/Screenshot+%28131%29.png,,,,,,,,,,,,0|zs0l28:,,,06/Nov/19 9:15 AM;nilesh.patil;Will revisit this defect after complete critical and high priority defects,,,,,,,,,,
+Enum with Completed state is accepted when mapped in SWC in MultiApplication WS..,UBT-976,14804,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,11/Oct/19 11:37 AM,15/Oct/19 4:45 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a Develioper WS.
+ # Create a Enum and Complete it.
+ # Now create a SWC and map the Enum.
+ # Now Complete the SWC.
+ # Deliver the Enum and SWC.
+ # Now create a Application WS.
+ # Select Search for GR Elements from Utilities.
+ # Now accept the SWC.
+ # Verify GR Pane of Enumeration.
+
+Actual: 1(C) version of Enum is accepted.
+
+Expected: 1(D) version of Enum should be accepted.","Version: 1.9.20190601
+Build Id: 10/10/2019 08.00",Dhanashri.Patil,mrunal.kulkarni,,,,,,,,,,,,,,,11/Oct/19 11:36 AM;mrunal.kulkarni;Screenshot (123).png;http://kpitjira.kpit.com/secure/attachment/12189/Screenshot+%28123%29.png,,,,,,,,,,,,0|zs0l1k:,,,"15/Oct/19 4:45 PM;Dhanashri.Patil;Its only for private data(IRV, Local variable) is mapped with enumeration.
+
+ ",,,,,,,,,,
+Failures while importing EngSysSfty,UBT-960,14786,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,siddharth.patel,siddharth.patel,10/Oct/19 10:29 AM,10/Oct/19 10:30 AM,20/Dec/19 5:58 PM,,,,,0,,"{
+  ""IMPLEMENTATION-DATA-TYPE"": {
+    ""CrsSwt2AccrPsd"": ""None"",
+    ""CrsSwt2OnOffSts"": ""None"",
+    ""CrsSwt2ResuPsd"": ""None"",
+    ""AccEngd"": ""None"",
+    ""BrkPedlFlt"": ""None"",
+    ""CrsSwt2CnclPsd"": ""None"",
+    ""CrsSwt2ImpsSt"": ""None"",
+    ""CrsSwt2DcrPsd"": ""None""
+  }
+}",,siddharth.patel,,,,,,,,,,,,,,,,10/Oct/19 10:30 AM;siddharth.patel;Plug-in_Log_.txt;http://kpitjira.kpit.com/secure/attachment/12153/Plug-in_Log_.txt,,,,,,,,,,,,0|zs0kxk:,,,,,,,,,,,,,
+[Compare Stream]: Element is listed in incoming and outgoing after updating Sponsor responsible group,UBT-947,14750,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,neeraj.badade,neeraj.badade,07/Oct/19 4:03 PM,10/Oct/19 3:46 PM,20/Dec/19 5:58 PM,,,,,0,,"S+teps:
+ # Create Data element and Deliver to stream.
+ # Switch workspace and Accept the DE.
+ # Edit sponsor responsible group and Complete the DE.
+ # Compare workspace wit hsame stream and verify completed DE.
+
+*Actual:* DE is listed in both incoming and outgoing.
+
+*Expected:* DE shall only be listed in Outgoing changes.","Version: 1.9.20190601
+Build Id: 10/05/2019 10.00",neeraj.badade,siddharth.patel,,,,,,,,,,,,,,,07/Oct/19 4:02 PM;neeraj.badade;DE in IncomingOutgoing.png;http://kpitjira.kpit.com/secure/attachment/12134/DE+in+IncomingOutgoing.png,,,,,,,,,,,,0|zs0kpk:,,,09/Oct/19 8:20 AM;siddharth.patel;As  sponsor responsible group change is rare use case changing the priority to medium,,,,,,,,,,
+[Breakpoint][2D Table]: X input Name is blank when SwC is edited from Complete State,UBT-942,14745,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,kalerupchand,swapnali.jadhav,swapnali.jadhav,07/Oct/19 1:26 PM,21/Nov/19 4:55 PM,20/Dec/19 5:58 PM,,,,,0,,"# Create or Edit SwC.
+ # Create Breakpoint/2D Table.
+ # Select X-input category and X input Name.
+ # Check-in and complete SwC.
+ # Edit same SwC from GR pane.
+ # Open same Breakpoint/2D Table.
+ # Observe X input Name is blank.","Version: 1.9.20190601
+Build Id: 10/05/2019 10.00",Dhanashri.Patil,omkarb2,priyanka.pawar,swapnali.jadhav,,,,,,,,,,,,,09/Oct/19 2:08 PM;Dhanashri.Patil;RCA_ImpactAnalysis_UBT-942.docx;http://kpitjira.kpit.com/secure/attachment/12143/RCA_ImpactAnalysis_UBT-942.docx,07/Oct/19 1:26 PM;swapnali.jadhav;Screenshot (393).png;http://kpitjira.kpit.com/secure/attachment/12127/Screenshot+%28393%29.png,,,,,,,,,,,0|zs0kog:,,,"11/Oct/19 4:39 PM;Dhanashri.Patil;Discussed with Swanand, need discussion with Raghavendra.","20/Nov/19 12:46 PM;omkarb2;As discussed with [~nilesh.patil] reassigning this issue to [~kalerupchand]
+
+ ","21/Nov/19 4:54 PM;priyanka.pawar;RCA :
+
+When we checkout SWC we create new unresolved version of local variable but we does not create version of breakpoint.
+
+Breakpoint getById() fetch data for previous SWC but the local variable list populated in breakpoint has new version id.
+
+That is the reason selected local variable name (x input name) is blank",,,,,,,,
+Child Elements are accepted before accepting the Parent when Merge is triggered.,UBT-941,14744,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,07/Oct/19 11:00 AM,04/Nov/19 1:08 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a DE and Deliver it.
+ # Again Edit DE map enumeration and Deliver it again.
+ # Go to Application WS.
+ # Search For DE from utilities.
+ # Accept the 1st version of DE and save.
+ # Now again try to Accept 2nd version.
+ # Merge will be triggered.
+ # Do not accept the Element and close the tab.
+ # Go to GR Pane and select Enum.
+
+Actual: Enum is listed in GR Pane even if the Parent is not accepted.
+
+Expected: Child Element should not be accepted until Parent is not accepted.","Version: 1.9.20190601
+Build Id: 10/05/2019 10.00",amol.gholase,mrunal.kulkarni,nilesh.patil,,,,,,,,,,,,,,07/Oct/19 11:00 AM;mrunal.kulkarni;Screenshot (111).png;http://kpitjira.kpit.com/secure/attachment/12126/Screenshot+%28111%29.png,,,,,,,,,,,,0|zs0ko8:,,,"07/Oct/19 10:22 PM;nilesh.patil;If parent is in conflicting state, do not accept child element until user clicks on Accept incoming",10/Oct/19 9:45 AM;amol.gholase;Changing priority to medium as per discussion with [~amit.suryawanshi],"11/Oct/19 11:28 AM;amol.gholase;RCA-As per current implementation if data element has conflict while accepting and enumeration consumed in it do not have then enumeration will get accepted and then merge window get opened 
+Now we need to accept enumeration only after a conflicting element is accepted and we need to make this change for SWC, DE, and CS
+
+Need 16 hours of estimation ",,,,,,,,
+BOM accepts the Elements from COEs which are not selected while creating a WS.,UBT-936,14739,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,pravin.bhendarkar,mrunal.kulkarni,mrunal.kulkarni,07/Oct/19 9:34 AM,10/Dec/19 4:04 PM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create a stream using 3 COEs.
+ # Create a WS using that Stream.
+ # Create a Integrator WS using the same Stream.
+ # Now Compare the Integrator with any other Stream.(Stream contains Element under COEs apart from the selected ones above.)
+ # Accept the DE.
+
+Actual: The Element is accepted. As COE is not present in GR Pane not listed but BOM accepts the Element.
+
+Expected: The Element should not be accepted","UDD (Unified Design Dictionary)
+Version: 1.9.20190601
+Build Id: 10/05/2019 10.00",amol.gholase,mrunal.kulkarni,swanand.mehta,,,,,,,,,,,,,,07/Oct/19 9:34 AM;mrunal.kulkarni;Screenshot (106).png;http://kpitjira.kpit.com/secure/attachment/12121/Screenshot+%28106%29.png,07/Oct/19 9:34 AM;mrunal.kulkarni;Screenshot (107).png;http://kpitjira.kpit.com/secure/attachment/12120/Screenshot+%28107%29.png,,,,,,,,,,,0|zs0kn4:,,,"11/Oct/19 11:11 AM;amol.gholase;|The issue is related to Python side as python need to send elements which are part of COE's of current workspace or We can also restrict a user from accepting elements from COE's which are not part of current workspace COEs
+ Need to  discuss with Raghvendra for a developer can take it ahead
+ Assigning it to [~swanand.mehta] as it is related to compare
+ Connect with [~vibhavari.gundecha] for API details to fetch current workspace COE's|","11/Oct/19 11:48 AM;swanand.mehta;This is two part problem
+1. Python is detecting conflict  (Need to confirm with Raghvendra)
+2. Selection of CoE group based implementation is done in stream/Multi-app it should prevent user from accepting the element Again please confirm with Raghvendra","11/Oct/19 4:52 PM;amol.gholase;Once the discussion is completed with Raghavendra ,
+
+I will update estimations",,,,,,,,
+Ignore Long name field for element merge and compare,UBT-924,14707,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,aatish.gawas,aatish.gawas,02/Oct/19 8:00 PM,13/Nov/19 6:47 PM,20/Dec/19 5:58 PM,,,,,0,,"As discussed with Raghavendra,
+
+As long name difference unnecessarily causing confusion for user while doing merge as long name is not important field
+
+When ever 2 versions of elements are compared or merged, ignore long name field.
+
+Ignore long name field through out.
+
+ ",,aatish.gawas,swanand.mehta,,,,,,,,,,,,,,,13/Nov/19 6:46 PM;swanand.mehta;Compare Requirement.docx;http://kpitjira.kpit.com/secure/attachment/12795/Compare+Requirement.docx,,,,,,,,,,,,0|zs0kg0:,,,"13/Nov/19 6:47 PM;swanand.mehta;Not a defect requirement for compare are attached
+Either create new task for the same or put it under enhancement
+[^Compare Requirement.docx] ",,,,,,,,,,
+Not able to deliver Completed Elements of Application WS from Dev WS. ,UBT-914,14696,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,mrunal.kulkarni,mrunal.kulkarni,30/Sep/19 11:57 AM,11/Oct/19 9:30 AM,20/Dec/19 5:58 PM,,,,,0,,"Steps: 
+ # Create Application WS.
+ # Accept elements from Completed State. 
+ # Publish the Application.
+ # Create a Stream in Application.
+ # Create a WS using that stream.
+ # Now Right Click on WS and Select Compare with stream/accept/Deliver.
+
+Actual: Completed Elements are not listed in Outgoing Changes.
+
+Expected: Completed Elements should be listed in Outgoing Changes.
+
+ 
+
+Workspace details
+h3. Worksapce - >DevWS2_Application_2
+
+tid->t1234
+
+Server->[https://udd.kpit.com/UDD/dashboard.html#/]","Version: 1.9.20190601
+Build Id: 09/27/2019 12.00",gitlab,mrunal.kulkarni,nilesh.patil,,,,,,,,,,,,,,30/Sep/19 11:57 AM;mrunal.kulkarni;Screenshot (91).png;http://kpitjira.kpit.com/secure/attachment/12067/Screenshot+%2891%29.png,30/Sep/19 11:57 AM;mrunal.kulkarni;Screenshot (92).png;http://kpitjira.kpit.com/secure/attachment/12066/Screenshot+%2892%29.png,,,,,,,,,,,0|zs0kds:,,,"30/Sep/19 7:29 PM;gitlab;[Swanand Mehta|https://gitlab.kpit.com/swanandm] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/8806742f4826fb73c2085d1ec795128e7c907ac9]:
+'[UBT-914]: Displayed integration details on details page'","02/Oct/19 1:24 AM;nilesh.patil;Solution: As discussed with raghavendra
+
+  Workflow: User need to accept only delivered changes from one application to another.  Tool will not restrict user from accepting complete changes.
+
+ 
+
+ ",,,,,,,,,
+Search Global Resources Element status is not changed when Merge is triggered.,UBT-909,14691,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,amol.gholase,mrunal.kulkarni,mrunal.kulkarni,30/Sep/19 9:49 AM,11/Oct/19 11:37 AM,20/Dec/19 5:58 PM,,,,,0,,"Status:
+ # Select Search Global Resources Option from Utilities.
+ # Select any Element
+ # Select the lower/higher version of element which is already present in Application WS.
+
+      observe: Merge will be triggered.
+
+      4. Accept the Incoming element.
+
+Actual: Element is accepted, listed in GR Pane, and Merge tab is closed. But the Status of Element is Incoming.
+
+Expected: Status of element should be Accepted.",,amol.gholase,mrunal.kulkarni,,,,,,,,,,,,,,,30/Sep/19 9:49 AM;mrunal.kulkarni;Screenshot (86).png;http://kpitjira.kpit.com/secure/attachment/12061/Screenshot+%2886%29.png,,,,,,,,,,,,0|zs0kco:,,,"11/Oct/19 11:37 AM;amol.gholase;RCA- Once user accepts element from merge tab, search Global element tabs need to be refreshed.
+Either broadcast refresh event or give close search global element tab
+
+Estimation 8 hours",,,,,,,,,,
+[MultiApplication]: Dependency is not shown when child element is removed.,UBT-901,14675,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,mrunal.kulkarni,mrunal.kulkarni,mrunal.kulkarni,27/Sep/19 4:28 PM,11/Oct/19 9:32 AM,20/Dec/19 5:58 PM,,,,,0,,"Steps:
+ # Create an Application.
+ # Accept a DE having Enum.
+ # Remove Enum.
+ # Check For conflict.
+
+Actual: Dependency is not shown.
+
+Expected: Dependency should be shown.",,bhaskar.newase,mrunal.kulkarni,,,,,,,,,,,,,,,27/Sep/19 4:28 PM;mrunal.kulkarni;Screenshot (83).png;http://kpitjira.kpit.com/secure/attachment/12055/Screenshot+%2883%29.png,27/Sep/19 4:28 PM;mrunal.kulkarni;Screenshot (84).png;http://kpitjira.kpit.com/secure/attachment/12054/Screenshot+%2884%29.png,,,,,,,,,,,0|zs0k94:,,,01/Oct/19 4:06 PM;bhaskar.newase;As discussed with Pravin and mrunal - User can not be able to remove child element if it is consumed some where else.,,,,,,,,,,
+[Multi App]: Enum again visible under GR pane after removing Enum from Application WS and Refreshing it.,UBT-884,14644,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,md.hassan,md.hassan,23/Sep/19 5:12 PM,14/Oct/19 11:12 PM,20/Dec/19 5:58 PM,,,,,0,,"*STEPS:* 
+ # Remove Enum from Application WS.
+ # Refresh UDD and Observe the GR element.
+
+*Expected:* Enum Should not visible under GR pane.
+
+*Actual:* Enum is visible under GR pane.","Version: 1.9.20190601
+Build Id: 09/22/2019 23.30",gitlab,md.hassan,nilesh.patil,pravin.bhendarkar,vibhavari.gundecha,,,,,,,,,,,UBT-901,23/Sep/19 5:11 PM;md.hassan;After refresh.png;http://kpitjira.kpit.com/secure/attachment/11993/After+refresh.png,23/Sep/19 5:11 PM;md.hassan;Before Refresh.png;http://kpitjira.kpit.com/secure/attachment/11992/Before+Refresh.png,,,,,,,,,,,0|zs0k28:,,,"24/Sep/19 10:58 AM;md.hassan;Same scenario Occurs for DE, SWC, Mode Declaration and Mode Switch Interface in Build Version: 1.9.20190601
+Build Id: 09/22/2019 23.30",24/Sep/19 3:07 PM;pravin.bhendarkar;it is not getting removed due to dependency. If you remove the parent element then only it will remove.,"10/Oct/19 10:00 AM;nilesh.patil;Workflow:
+
+  1)Call BOM service to find dependency 
+
+  2)if dependency exist, then show error message to user
+
+  3)if no dependency exist then check if it base integration element
+
+  4)If integration element then do not remove element element show message to user
+
+ 5)else remove element from workspace.
+
+ ","10/Oct/19 7:49 PM;nilesh.patil;Developer to update current status and due date
+
+[~nilesh.patil]: Update Plugin dependency after which developer will update ball park estimation","10/Oct/19 9:34 PM;vibhavari.gundecha;[~nilesh.patil] For DE required ""interfaceShortname"" and ""grName"" in GR pane payload","11/Oct/19 10:32 AM;vibhavari.gundecha;As per discussion with Nilesh, we need to follow below workflow and no need to display dependency conflict check UI
+
+*Workflow*:
+
+ 1) If integration element then do not remove element, show dependency message to user
+
+ 2) else remove element from workspace
+
+[~nilesh.patil] Please add if I am missing something
+
+[~pravin.bhendarkar] Please commit code for integration check.
+
+ 
+
+Thanks,
+
+Vibha","11/Oct/19 4:39 PM;gitlab;[Pravin Bhendarkar|https://gitlab.kpit.com/pravinb8] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/94e56753fa3b9a82fbaa346b013a38b049ef9ca6]:
+'[UBT-884]- Added integration element check before remove for all'",11/Oct/19 4:42 PM;pravin.bhendarkar;Committed BE code for romove element with integration element check.,11/Oct/19 5:34 PM;pravin.bhendarkar;Code merging and integration testing is pending,"11/Oct/19 7:07 PM;nilesh.patil;As per the discussion with Ragahvendra/Aatish/Nilesh, defect related to Multi-app will be raised as medium or fixed later unless it is blocker ",
+Compare screen UI Issue,UBT-837,14597,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,,siddharth.patel,siddharth.patel,21/Sep/19 3:43 PM,08/Nov/19 8:55 PM,20/Dec/19 5:58 PM,,,,,0,,,,siddharth.patel,vishwadip.more,,,,,,,,,,,,,,,21/Sep/19 3:43 PM;siddharth.patel;screenshot-1.png;http://kpitjira.kpit.com/secure/attachment/11871/screenshot-1.png,,,,,,,,,,,,0|zs0jrs:,,,15/Oct/19 10:30 AM;vishwadip.more;This duplicate of UBT-938. Bhaskar is wokrin on the issue.,,,,,,,,,,
+[UDD][Modes lifecycle support]: Modes are not visible under Mode Manager Error Behavior,UBT-658,14234,Bug,Reopened,UBT,UDD Bug tracker,software,amlendu,,,Medium,Done,rohit.bhosale,rohit.bhosale,rohit.bhosale,27/Aug/19 2:13 PM,16/Nov/19 3:28 PM,17/Dec/19 3:14 PM,04/Sep/19 6:54 PM,,,,0,,"Tested on below build
+
+UDD (Unified Design Dictionary)
+ Version: 1.9.20190823
+ Build Id: 08/27/2019 08.30
+
+ 
+
+Steps  to reproduce 
+
+1.Create Mode Declaration
+
+2.Enter 4 Modes Name and their value under current Mode Declaration form
+
+3.Go to Mode Manager Error Behavior tab
+
+4.Check under Default mode and mode policy
+h3. Observation:
+
+4th no mode is not visible under this two drop down fields",,gitlab,rohit.bhosale,siddharth.patel,,,,,,,,,,,,,,04/Sep/19 1:11 PM;vibhavari.gundecha;Code_review_checklist_UBT-658.xlsx;http://kpitjira.kpit.com/secure/attachment/11549/Code_review_checklist_UBT-658.xlsx,27/Aug/19 2:12 PM;rohit.bhosale;image-2019-08-27-14-11-42-256.png;http://kpitjira.kpit.com/secure/attachment/11444/image-2019-08-27-14-11-42-256.png,27/Aug/19 2:12 PM;rohit.bhosale;image-2019-08-27-14-11-42-334.png;http://kpitjira.kpit.com/secure/attachment/11443/image-2019-08-27-14-11-42-334.png,04/Sep/19 1:28 PM;vibhavari.gundecha;Impact Analysis Document - UBT-658.docx;http://kpitjira.kpit.com/secure/attachment/11551/Impact+Analysis+Document+-+UBT-658.docx,16/Nov/19 3:28 PM;rohit.bhosale;Screenshot (20).png;http://kpitjira.kpit.com/secure/attachment/12817/Screenshot+%2820%29.png,16/Nov/19 3:28 PM;rohit.bhosale;Screenshot (21).png;http://kpitjira.kpit.com/secure/attachment/12818/Screenshot+%2821%29.png,16/Nov/19 3:28 PM;rohit.bhosale;Screenshot (22).png;http://kpitjira.kpit.com/secure/attachment/12819/Screenshot+%2822%29.png,,,,,,0|zs0hjc:,,,"03/Sep/19 9:05 PM;gitlab;[Vibhavari Gundecha|https://gitlab.kpit.com/vibhavarig] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/b4f0db267b785e854a4f84861693e5939963a782]:
+'[UBT-658]:Added offset for adjusting the height'","03/Sep/19 9:07 PM;gitlab;[Vibhavari Gundecha|https://gitlab.kpit.com/vibhavarig] mentioned this issue in [a merge request of fca/udd|https://gitlab.kpit.com/fca/udd/merge_requests/50]:
+'[UBT-658]:Added offset for adjusting the height'",08/Nov/19 1:56 PM;siddharth.patel;[~rohit.bhosale] verify and close,"16/Nov/19 3:28 PM;rohit.bhosale;UDD (Unified Design Dictionary)
+Version: 1.9.20190601
+Build Id: 11/15/2019 08.15
+
+Tested on above build : Same issue observe 
+
+PFA","16/Nov/19 3:28 PM;rohit.bhosale;Tested on 3 different machine
+
+ ",,,,,,
+[Compare]: Outgoing information is not removed when user delivers the Data from Outgoing,UBT-618,14060,Bug,In Review,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,mrunal.kulkarni,mrunal.kulkarni,19/Aug/19 10:25 AM,15/Nov/19 7:08 PM,20/Dec/19 5:58 PM,,,,,0,Can_be_work_after_16,"Steps: 
+ # Create a DE and proceed it till Complete.
+ # Compare the current WS with any Stream.
+ # Expand any GR Resource by Clicking on ""+"" button.(All the Incoming, outgoing conflicts are visible on right side of UI)
+ # Deliver the Elements.
+
+Actual: The Delivered Element gets removed from Outgoing Changes but remains on UI.
+
+Expected :After The Delivered Element gets removed from Outgoing Changes it should also be removed from the right side list on UI.","Version: 1.9.20190601
+Build Id: 08/17/2019 09.00",aatish.gawas,gitlab,mrunal.kulkarni,nilesh.patil,omkarb2,swanand.mehta,,,,,,,,,,,19/Aug/19 10:25 AM;mrunal.kulkarni;Screenshot (167).png;http://kpitjira.kpit.com/secure/attachment/11368/Screenshot+%28167%29.png,19/Aug/19 10:25 AM;mrunal.kulkarni;Screenshot (168).png;http://kpitjira.kpit.com/secure/attachment/11367/Screenshot+%28168%29.png,,,,,,,,,,,0|zs0ggo:,,,03/Sep/19 10:59 AM;swanand.mehta;UI only shows data which is coming from server can you please update,"04/Sep/19 11:50 PM;aatish.gawas;As discussed and confirmed with Raghavendra, we are not going to remove element from WS BOM after delivery for now.
+
+So just concentrate on UI part where UI is not getting updated after delivery, though it is not critical not a show stopper.","02/Oct/19 9:17 PM;gitlab;[Omkar Badave|https://gitlab.kpit.com/omkarb2] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/478ad675dd926f8ddb346653e8de0a0afe12a9da]:
+'[UBT-618]: Added code to remove element from compare table once the element is...'","03/Oct/19 7:01 PM;gitlab;[Swanand Mehta|https://gitlab.kpit.com/swanandm] mentioned this issue in [a commit of fca/udd|https://gitlab.kpit.com/fca/udd/commit/c4fdc89fd0afc41b293ca23449f7cfbd35b47887]:
+'Merge branch 'development' into Defects/UBT-618'",10/Oct/19 11:57 PM;omkarb2;Cannot resolve the issue as the implementation is overridden by another implementation.,16/Oct/19 3:32 PM;omkarb2;[~nilesh.patil] Since the implementation is now conflicting with current code either we need to reject this defect or re implement on new code base.,05/Nov/19 8:35 AM;nilesh.patil;This functionality need to be verified once ,"15/Nov/19 7:08 PM;nilesh.patil;This defect is no longer valid due to new implementation.
+
+[~siddharth.patel]: Please mark defect invalid",,,
+[Ports][Validation]: Error message is thrown in logger when port with duplicate name is created.,UBT-556,13608,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,neeraj.badade,neeraj.badade,24/Jul/19 10:28 AM,13/Sep/19 1:06 AM,20/Dec/19 5:58 PM,,SWC - Ports,Validation,,0,Can_be_work_after_16,"Create port with duplicate name and observe error. 
+
+Error occurs even if validation flag is set as true.","Version: 1.9.20190701
+Build Id: 07/12/019 15.00",neeraj.badade,,,,,,,,,,,,,,,,24/Jul/19 10:28 AM;neeraj.badade;Duplicate port.png;http://kpitjira.kpit.com/secure/attachment/11255/Duplicate+port.png,,,,,,,,,,,,0|zs0do0:,,,,,,,,,,,,,
+Not able to add new feature and sub-feature which includes special characters,UBT-509,13175,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,nilesh.patil,siddharth.patel,siddharth.patel,01/Jul/19 12:14 PM,06/Nov/19 9:20 AM,20/Dec/19 5:58 PM,,,,,0,,"URL : https://udd.kpit.com/UDD/api/powerCal/feature/add
+Body : {""shortName"":""D&E CmbPhsgTar"",""sectSetId"":2,""user"":773}
+Sub-feature : D&E CmbPhsgTar Cals",,nilesh.patil,siddharth.patel,swanand.mehta,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0azk:,,,"09/Sep/19 10:55 PM;swanand.mehta;Not reproducible
+No changes were done for this defect ",23/Sep/19 1:18 PM;siddharth.patel;Issue is still re-producible ,06/Nov/19 9:20 AM;nilesh.patil;Due date:11/06/2019,,,,,,,,
+SystemDesk Sync fails,UBT-501,13164,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,siddharth.patel,siddharth.patel,28/Jun/19 10:10 AM,28/Jun/19 11:38 AM,20/Dec/19 5:58 PM,,Import,,,0,,"PyPlugin Issue
+Log File attached.",,siddharth.patel,,,,,,,,,,,,,,,,28/Jun/19 10:10 AM;siddharth.patel;SystemDeskSync.txt;http://kpitjira.kpit.com/secure/attachment/11130/SystemDeskSync.txt,,,,,,,,,,,,0|zs0ax4:,,,,,,,,,,,,,
+Failures while importing Obd CoE,UBT-444,13029,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,siddharth.patel,siddharth.patel,17/Jun/19 10:22 AM,11/Oct/19 10:25 AM,20/Dec/19 5:58 PM,,Import,,,0,,"Failures : 
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""KnkSnsrVolt"": ""None"",
+    ""VvtRpm"": ""None"",
+    ""VvtVolt"": ""None"",
+    ""FixdPntRpm"": ""None"",
+    ""InPlaEepVvtExh"": ""None""
+  },
+  ""NV-DATA-INTERFACE"": {
+    ""InPlaEepVvtBattAbrtval"": ""None"",
+    ""InPlaEepIdleSpdDiagcDeltaRpm"": ""None"",
+    ""InPlaEepVvtIntCl2PrfmncTol"": ""None"",
+    ""InPlaEepVvtExhCl1PrfmncTol"": ""None"",
+    ""InPlaEepVvtIntCl1PrfmncTol"": ""None"",
+    ""InPlaEepVvtRpmx8Abrtval"": ""None"",
+    ""InPlaEepMaxKnkSnsrDiagcUThd"": ""None"",
+    ""InPlaEepMinKnkSnsrDiagcUThd"": ""None"",
+    ""InPlaEepVvtExhCl2PrfmncTol"": ""None""
+  },
+  ""CLIENT-SERVER-INTERFACE"": {
+    ""InPlaDIDWrite"": ""None""
+  }
+}
+Failures on 3rd Sept: 
+InPlaEepMaxKnkSnsrDiagcUThd
+InPlaEepMinKnkSnsrDiagcUThd",,nilesh.patil,raghavendra,siddharth.patel,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs0a3c:,,,13/Sep/19 1:50 AM;nilesh.patil;[~siddharth.patel]: Can you re-verify once and log details on defect,"13/Sep/19 2:47 PM;siddharth.patel;Failures :
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""KnkSnsrVolt"": ""None""
+  },
+  ""NV-DATA-INTERFACE"": {
+    ""InPlaEepMaxKnkSnsrDiagcUThd"": ""None"",
+    ""InPlaEepMinKnkSnsrDiagcUThd"": ""None""
+  }
+}","14/Sep/19 8:25 AM;raghavendra;""min"": 0,  ""max"": 5, ""resolution"": 7.62951094834821e-05, ""offset"": 0.0, IDT=uint16
+
+DataType = ADTSKnkSnsrVolt
+
+Max Value = 0.0000762951094834821 *65535 = 4.9999999999999994235
+
+UDD thinks Max Value is wrong. Please check are we using 65535 or 65536 in the calculation.",17/Sep/19 3:54 PM;siddharth.patel;[~nilesh.patil][~omkarb2] Can you check this at back-end and confirm the same,"11/Oct/19 10:25 AM;siddharth.patel;Tested on the latest build
+Failures : 
+{""APPLICATION-PRIMITIVE-DATA-TYPE"": {""KnkSnsrVolt"": ""None""}, ""NV-DATA-INTERFACE"": {""InPlaEepMaxKnkSnsrDiagcUThd"": ""None"", ""InPlaEepMinKnkSnsrDiagcUThd"": ""None""}}",,,,,,
+Failures while importing GasXchg CoE,UBT-437,12997,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,siddharth.patel,siddharth.patel,13/Jun/19 2:45 PM,11/Oct/19 10:27 AM,20/Dec/19 5:58 PM,,Import,,,0,,"{
+  ""ENUMERATION-DATA-TYPE"": {
+    ""BooleanArray4"": ""None"",
+    ""BooleanArray10"": ""None""
+  },
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""VvaActtnReqInvld"": ""None"",
+    ""InPlaEepVvtRpm"": ""None"",
+    ""EngNFxp"": ""None"",
+    ""VlvMtnAdpnLstIntkShift"": ""None"",
+    ""OilPThdAbv"": ""None""
+  },
+  ""SENDER-RECEIVER-INTERFACE"": {
+    ""VvaActtnReqInvld"": ""None"",
+    ""DsvlEngOilPReqd"": ""None""
+  },
+  ""NV-DATA-INTERFACE"": {
+    ""InPlaEepVvtEnaRpm"": ""None"",
+    ""VlvMtnAdpnLstIntkShiftEep"": ""None"",
+    ""InPlaEepVvtDiRpm"": ""None"",
+    ""InPlaEepMaxRpmForVvt"": ""None""
+  },
+  ""APPLICATION-ARRAY-DATA-TYPE"": {
+    ""AnnLyrTotAdimSize5"": ""None"",
+    ""AnnLyrTotAdimSize10"": ""None"",
+    ""RefDilFacMapAdim"": ""None""
+  },
+  ""PARAMETER-INTERFACE"": {
+    ""AnnLyr1WghtTotVol"": ""None"",
+    ""AnnLyr1WghtTotVolLoLift"": ""None"",
+    ""AnnLoLiftLyr1WghtAirVol"": ""None"",
+    ""RefDilFacMap"": ""None"",
+    ""AnnLyr1WghtAirVol"": ""None""
+  }
+}",,nilesh.patil,siddharth.patel,,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs09wg:,,,13/Sep/19 1:51 AM;nilesh.patil;[~siddharth.patel]: Can you re-verify once and log details on defect,"13/Sep/19 2:45 PM;siddharth.patel;Failures :
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""IntelligentBattSnsrCalDataErr"": ""None"",
+    ""IntelligentBattSnsrNvmDataErr"": ""None"",
+    ""EcuIdnErr"": ""None"",
+    ""VlvMtnAdpnLstIntkShift"": ""None""
+  },
+  ""SENDER-RECEIVER-INTERFACE"": {
+    ""IbsErrCal"": ""None"",
+    ""IbsErrNvm"": ""None"",
+    ""IbsErrIdn"": ""None""
+  },
+  ""NV-DATA-INTERFACE"": {
+    ""VlvMtnAdpnLstIntkShiftEep"": ""None""
+  },
+  ""PARAMETER-INTERFACE"": {
+    ""AnnLyr1WghtTotVol"": ""None"",
+    ""AnnLyr1WghtAirVol"": ""None""
+  }
+}","11/Oct/19 10:27 AM;siddharth.patel;Tested on the latest build
+Failures : 
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""VlvMtnAdpnLstIntkShift"": ""None""
+  },
+  ""NV-DATA-INTERFACE"": {
+    ""VlvMtnAdpnLstIntkShiftEep"": ""None""
+  },
+  ""PARAMETER-INTERFACE"": {
+    ""AnnLyr1WghtTotVol"": ""None"",
+    ""AnnLyr1WghtAirVol"": ""None""
+  }
+}",,,,,,,,
+Failures while importing EgyStrog CoE,UBT-434,12994,Bug,In Progress,UBT,UDD Bug tracker,software,amlendu,,,Medium,,raghavendra,siddharth.patel,siddharth.patel,13/Jun/19 2:36 PM,11/Oct/19 10:23 AM,20/Dec/19 5:58 PM,,Import,,,0,,"Failures : 
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""IntelligentBattSnsrCalDataErr"": ""None"",
+    ""IntelligentBattSnsrNvmDataErr"": ""None"",
+    ""EcuIdnErr"": ""None""
+  },
+  ""SENDER-RECEIVER-INTERFACE"": {
+    ""IbsErrCal"": ""None"",
+    ""IbsErrNvm"": ""None"",
+    ""IbsErrIdn"": ""None"",
+    ""FuLvlRampFac"": ""None"",
+    ""InPlaFuPrimeTmr"": ""None"",
+    ""IbsStOfHlthChrgAccuracy"": ""None"",
+    ""FuAirRatStoi"": ""None"",
+    ""IbsSoc"": ""None""
+  },
+  ""NV-DATA-INTERFACE"": {
+    ""InPlaEepFuPrimeTi"": ""None"",
+    ""InPlaEepFuTankMinLvlThd"": ""None"",
+    ""InPlaEepDlyToPrimeAftmntLvlRng"": ""None""
+  }
+}",,nilesh.patil,raghavendra,siddharth.patel,,,,,,,,,,,,,,,,,,,,,,,,,,0|zs09vs:,,,13/Sep/19 1:51 AM;nilesh.patil;[~siddharth.patel]: Can you re-verify once and log details on defect,"13/Sep/19 2:43 PM;siddharth.patel;Failures :
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""IntelligentBattSnsrCalDataErr"": ""None"",
+    ""IntelligentBattSnsrNvmDataErr"": ""None"",
+    ""EcuIdnErr"": ""None""
+  },
+  ""SENDER-RECEIVER-INTERFACE"": {
+    ""IbsErrCal"": ""None"",
+    ""IbsErrNvm"": ""None"",
+    ""IbsErrIdn"": ""None""
+  }
+}",14/Sep/19 8:42 AM;raghavendra;no failures with latest script. check QA server for ADT,"21/Sep/19 2:20 PM;siddharth.patel;Failures on latest build :
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""IntelligentBattSnsrCalDataErr"": ""None"",
+    ""IntelligentBattSnsrNvmDataErr"": ""None"",
+    ""EcuIdnErr"": ""None""
+  },
+  ""SENDER-RECEIVER-INTERFACE"": {
+    ""IbsErrCal"": ""None"",
+    ""IbsErrNvm"": ""None"",
+    ""IbsErrIdn"": ""None""
+  }
+}","11/Oct/19 10:23 AM;siddharth.patel;Tested on the latest build : 
+Failures : 
+{
+  ""APPLICATION-PRIMITIVE-DATA-TYPE"": {
+    ""IntelligentBattSnsrCalDataErr"": ""None"",
+    ""IntelligentBattSnsrNvmDataErr"": ""None"",
+    ""EcuIdnErr"": ""None""
+  },
+  ""SENDER-RECEIVER-INTERFACE"": {
+    ""IbsErrCal"": ""None"",
+    ""IbsErrNvm"": ""None"",
+    ""IbsErrIdn"": ""None""
+  }
+}
+Re-assigning it to [~raghavendra] ",,,,,,
+[SWC][IRV]SAVE - Init value is not within the min and max range,UBT-335,12698,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,omkarb2,amol.gholase,amol.gholase,03/May/19 3:28 PM,16/Oct/19 3:35 PM,20/Dec/19 5:58 PM,,SWC - Private Variable management in UDD (IRV),,,0,,Even if the init value is above the max IRV got saved successfully ,,amol.gholase,nilesh.patil,omkarb2,,,,,,,,,,,,,,03/May/19 3:29 PM;amol.gholase;screenshot-1.png;http://kpitjira.kpit.com/secure/attachment/10685/screenshot-1.png,,,,,,,,,,,,0|zs0828:,,,"03/May/19 3:47 PM;omkarb2;There is no validation done for Initvalues since it is going to be handled by the Validation Framework.
+
+ ",12/Sep/19 1:33 AM;nilesh.patil;This need to be fixed in UI,16/Oct/19 3:35 PM;omkarb2;The impacted areas are more for this defect as the init value directive is used throughout the UDD.,,,,,,,,
+Init Value missing on the import view and import edit screen,UBT-193,12303,Bug,To Do,UBT,UDD Bug tracker,software,amlendu,,,Medium,,omkarb2,siddharth.patel,siddharth.patel,14/Mar/19 11:33 AM,02/May/19 11:42 AM,20/Dec/19 5:58 PM,,Import - GR,,,0,Import_Integration_Test_Issues,"1.Import interface with enum as data type
+ 2.Now open the view/edit screen from import session 
+ 3.Observe the init value field is blank
+ Word document attached",,paramindes01,siddharth.patel,swanand.mehta,,,,,,,,,,,,,,14/Mar/19 11:32 AM;siddharth.patel;Import_Observations_03132019.docx;http://kpitjira.kpit.com/secure/attachment/10442/Import_Observations_03132019.docx,,,,,,,,,,,,0|zs05nk:,,,14/Mar/19 9:06 PM;paramindes01;Please discuss the with Siddharth and Swanand before implementation.,02/May/19 11:41 AM;swanand.mehta;Init value implementation is pending moving on Omkars name,,,,,,,,,

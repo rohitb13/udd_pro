@@ -1,0 +1,38 @@
+We can divide our project into 4 parts.
+
+1)Autosar
+    
+Application layer
+RTE layer
+BSW layer
+
+2)Application layer
+It contain multiple SWCs.and they are connected through interfaces.
+
+3)UDD
+We are developing a software called UDD (Unified Design Dictionary).
+Basically in UDD we are creating multiple SWCs which is a part of Autosar application layer. In this way UDD project is related to Autoar.
+
+In Swc creation we need to create ports so that they can interact with the different SWCs or BSW.
+Read about runnable and runnable resource access it is related to autosar and port. As Runnable resurce access provides the access to the ports to transceive the data
+through ports
+Calibration is the process of configuring an instrument to provide a result for a sample within an acceptable range. The instrument can then provide more accurate 
+results when samples of unknown values are tested in the normal usage of the product.
+
+Read about Private data, Caliberation and multiple RTE (Runtime Environment) events occured.
+
+Read about multiple interfaces & Enum and all GR elements.
+
+Later On as every industry is moving towards agile so UDD also moves towards agile and then Stream and Multiapp concept comes into place.
+Stream is used to save individual data in particulaer and also allow to give and take with the others ones.
+Multiapp is used to use different application at the same time but by different user to create new functionality according to the market requirement.
+
+4)inport Export
+
+We can import data into UDD from the Client server.
+We can export data from UDD
+While exporting two types of file will be generated Arxml and csv.
+Arxml directly imported into matlab and we can view the structure created in UDD.
+Csv file should be converted into .m file through mscripting and then can be import.
+
+Final thing that UDD is integrated with the MATLAB and SystemDesk.
